@@ -7,3 +7,9 @@ Idea formation started
 
 ###2/5/22
 Viable API found https://www.jfree.org/jfreechart/
+
+###2/6/22
+Completed:
+* Updated Problem Statement
+* Compiled User Stories
+* Finished base models of UI design
