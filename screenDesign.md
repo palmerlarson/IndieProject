@@ -21,4 +21,4 @@
 ### Goal Tracking Page
 ![Goal Tracking Page](DesignModels/GoalTracking-page.png)
 
-<center>_Adjustments Possible_</center>
+<p align="center">_Adjustments Possible_</p>
