@@ -17,4 +17,4 @@ I have always wanted to use a well built tool to track and map my finances. I wa
 * Tax warnings (unlikely)
 
 ## Design
-*[Project Board](https://trello.com/b/SI20YppP/wealth-debt-evaluator-wdev)
+* [Project Board](https://trello.com/b/SI20YppP/wealth-debt-evaluator-wdev)
