@@ -25,6 +25,6 @@ Week 5 exercise completed. Practice with OneToMany and ManyToMany in hibernate.
 WDev (project) - Class design and Database design in the works
 
 ### 2/21/22
-Pushed an initial db design. For right now, I only have a concept of what I think the db should operate like. 
-
-File Structure setup to help visual class system.
+Pushed an initial db design. For right now, I only have a concept of what I think the db should operate like.
+Directory/Package Structure setup to help visual class system.
+Added Technologies/Techniques to README.md
