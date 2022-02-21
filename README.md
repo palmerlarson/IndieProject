@@ -35,7 +35,7 @@ I have always wanted to use a well built tool to track and map my finances. I wa
 * Basic investment mapping
 * Wealth/Debt user comparisons
 * Goals
-* Tax warnings (unlikely)
+* Tax warnings (uncommitted)
 
 ## Design
 * [Project Board](https://trello.com/b/SI20YppP/wealth-debt-evaluator-wdev)
