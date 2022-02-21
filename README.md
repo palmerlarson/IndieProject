@@ -6,8 +6,25 @@ This web application will allow the user to track and map their personal finance
 I have always wanted to use a well built tool to track and map my finances. I wanted to know with simple user inputs what my future finance calculations would be like. This program will do just that, it'll map future debt/wealth/investments. Unlike other "budgeting tools" this platform is meant to be simple to use, and free of charge. This program is meant to help all individuals from people with little wealth/debt to people with a lot. With the user login system, this tracking/mapping program will be able to save your settings so you can update them later.
 
 ## Technologies/Techniques
+* IDE
+	* IntelliJ IDEA
 * Databases
 	* MySQL
+* CSS
+	* BootStrap or React
+	* Vanilla
+* Logging
+	* Log4j2
+* ORM Framework
+	* Hibernate
+* APIs
+	* JFreechart
+* Dependency Management
+	* Maven
+* Unit Testing
+	* JUnit
+* Hosting
+	* AWS
 	
 ## Features/Technologies/Techniques (uncommitted):
 * Personal expense tracking
