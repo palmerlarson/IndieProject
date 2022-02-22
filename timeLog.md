@@ -28,3 +28,9 @@ WDev (project) - Class design and Database design in the works
 Pushed an initial db design. For right now, I only have a concept of what I think the db should operate like.
 Directory/Package Structure setup to help visual class system.
 Added Technologies/Techniques to README.md
+
+### 2/22/22
+Fixed Exercise 5 to use .equals to compare objects more efficiently.
+Added Goal Dates to Trello.
+Change Professional Dev. Project to LeetCode.
+Initiated Conversation with Peer Review group to set up meeting times.
