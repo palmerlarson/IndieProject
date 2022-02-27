@@ -43,4 +43,4 @@ I have always wanted to use a well built tool to track and map my finances. I wa
 * [Screen Design](/screenDesign.md)
 * [Database Design](/DatabaseDesign)
 * [Class Design](/)
-* [TimeLog](/timelog.md)
+* [TimeLog](/timeLog.md)
