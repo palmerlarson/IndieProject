@@ -29,5 +29,17 @@
 ### 2/22/22
 * Fixed Exercise 5 to use .equals to compare objects more efficiently.
 * Added Goal Dates to Trello.
-* Change Professional Dev. Project to LeetCode.
+* Changed Professional Dev. Project to LeetCode.
 * Initiated Conversation with Peer Review group to set up meeting times.
+
+### 2/25/22
+* Upgraded from Macbook air -> 14 MBP pro; Time taken to re-setup environments (this was a headache).
+
+### 2/26/22
+* Met with Justin, Paul, and Subu to discuss and present our Indie projects
+
+### 2/27/22
+* Completed peer review for Paul and Subu
+* Created 'user' database as initial database
+* Hibernate and Doa formation setup
+* CRUD unit tests created and are passing

@@ -1,0 +1,298 @@
+[DEBUG] 2022-02-27 13:35:11.502 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2022-02-27 13:35:11.504 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2022-02-27 13:35:11.507 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2022-02-27 13:35:11.571 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2022-02-27 13:35:11.573 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2022-02-27 13:35:11.735 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2022-02-27 13:35:11.735 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2022-02-27 13:35:11.744 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2022-02-27 13:35:11.983 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2022-02-27 13:35:12.080 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2022-02-27 13:35:12.082 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2022-02-27 13:35:12.100 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2022-02-27 13:35:12.124 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@7e7f0216
+[DEBUG] 2022-02-27 13:35:12.124 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@7e7f0216
+[DEBUG] 2022-02-27 13:35:12.125 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@7e7f0216
+[DEBUG] 2022-02-27 13:35:12.125 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6724cdec
+[DEBUG] 2022-02-27 13:35:12.125 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1a4d1ab7
+[DEBUG] 2022-02-27 13:35:12.126 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1292071f
+[DEBUG] 2022-02-27 13:35:12.126 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@78d6447a
+[DEBUG] 2022-02-27 13:35:12.126 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@78d6447a
+[DEBUG] 2022-02-27 13:35:12.126 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@78d6447a
+[DEBUG] 2022-02-27 13:35:12.127 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@761e788f
+[DEBUG] 2022-02-27 13:35:12.127 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@761e788f
+[DEBUG] 2022-02-27 13:35:12.128 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@761e788f
+[DEBUG] 2022-02-27 13:35:12.128 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5ef6fd7f
+[DEBUG] 2022-02-27 13:35:12.128 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5ef6fd7f
+[DEBUG] 2022-02-27 13:35:12.128 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5ef6fd7f
+[DEBUG] 2022-02-27 13:35:12.129 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@730f9695
+[DEBUG] 2022-02-27 13:35:12.129 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@730f9695
+[DEBUG] 2022-02-27 13:35:12.129 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@730f9695
+[DEBUG] 2022-02-27 13:35:12.129 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6b2e46af
+[DEBUG] 2022-02-27 13:35:12.130 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6b2e46af
+[DEBUG] 2022-02-27 13:35:12.130 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6b2e46af
+[DEBUG] 2022-02-27 13:35:12.130 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5e1d03d7
+[DEBUG] 2022-02-27 13:35:12.130 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5e1d03d7
+[DEBUG] 2022-02-27 13:35:12.130 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5e1d03d7
+[DEBUG] 2022-02-27 13:35:12.131 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7a0ef219
+[DEBUG] 2022-02-27 13:35:12.131 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7a0ef219
+[DEBUG] 2022-02-27 13:35:12.131 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7a0ef219
+[DEBUG] 2022-02-27 13:35:12.131 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@658255aa
+[DEBUG] 2022-02-27 13:35:12.131 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@658255aa
+[DEBUG] 2022-02-27 13:35:12.132 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1e58512c
+[DEBUG] 2022-02-27 13:35:12.132 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1e58512c
+[DEBUG] 2022-02-27 13:35:12.133 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@38d17d80
+[DEBUG] 2022-02-27 13:35:12.133 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@38d17d80
+[DEBUG] 2022-02-27 13:35:12.133 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1229a2b7
+[DEBUG] 2022-02-27 13:35:12.134 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@10a0fe30
+[DEBUG] 2022-02-27 13:35:12.134 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6920614
+[DEBUG] 2022-02-27 13:35:12.134 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6920614
+[DEBUG] 2022-02-27 13:35:12.135 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@7ff35a3f
+[DEBUG] 2022-02-27 13:35:12.135 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7ff35a3f
+[DEBUG] 2022-02-27 13:35:12.143 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@22a6e998
+[DEBUG] 2022-02-27 13:35:12.144 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@22a6e998
+[DEBUG] 2022-02-27 13:35:12.149 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4b6e1c0
+[DEBUG] 2022-02-27 13:35:12.150 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4b6e1c0
+[DEBUG] 2022-02-27 13:35:12.152 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@625d9132
+[DEBUG] 2022-02-27 13:35:12.152 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@625d9132
+[DEBUG] 2022-02-27 13:35:12.154 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@a9f023e
+[DEBUG] 2022-02-27 13:35:12.155 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@a9f023e
+[DEBUG] 2022-02-27 13:35:12.156 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5679e96b
+[DEBUG] 2022-02-27 13:35:12.156 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5679e96b
+[DEBUG] 2022-02-27 13:35:12.157 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@4d41ba0f
+[DEBUG] 2022-02-27 13:35:12.157 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@4d41ba0f
+[DEBUG] 2022-02-27 13:35:12.165 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@58472096
+[DEBUG] 2022-02-27 13:35:12.166 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@58472096
+[DEBUG] 2022-02-27 13:35:12.189 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@62dbe64e
+[DEBUG] 2022-02-27 13:35:12.192 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@62dbe64e
+[DEBUG] 2022-02-27 13:35:12.193 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@7fe82967
+[DEBUG] 2022-02-27 13:35:12.193 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7fe82967
+[DEBUG] 2022-02-27 13:35:12.193 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@c3edf4c
+[DEBUG] 2022-02-27 13:35:12.194 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@c3edf4c
+[DEBUG] 2022-02-27 13:35:12.194 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@c3edf4c
+[DEBUG] 2022-02-27 13:35:12.198 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@54d8c20d
+[DEBUG] 2022-02-27 13:35:12.199 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@36681447
+[DEBUG] 2022-02-27 13:35:12.199 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@36681447
+[DEBUG] 2022-02-27 13:35:12.199 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@36681447
+[DEBUG] 2022-02-27 13:35:12.200 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@32e54a9d
+[DEBUG] 2022-02-27 13:35:12.200 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@b52b755
+[DEBUG] 2022-02-27 13:35:12.200 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@b52b755
+[DEBUG] 2022-02-27 13:35:12.201 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@56da7487
+[DEBUG] 2022-02-27 13:35:12.202 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@56da7487
+[DEBUG] 2022-02-27 13:35:12.202 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@fc807c1
+[DEBUG] 2022-02-27 13:35:12.202 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@fc807c1
+[DEBUG] 2022-02-27 13:35:12.203 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@6b350309
+[DEBUG] 2022-02-27 13:35:12.203 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6b350309
+[DEBUG] 2022-02-27 13:35:12.203 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@74174a23
+[DEBUG] 2022-02-27 13:35:12.203 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@74174a23
+[DEBUG] 2022-02-27 13:35:12.203 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@36c2b646
+[DEBUG] 2022-02-27 13:35:12.204 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@37df14d1
+[DEBUG] 2022-02-27 13:35:12.204 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@37df14d1
+[DEBUG] 2022-02-27 13:35:12.204 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@37df14d1
+[DEBUG] 2022-02-27 13:35:12.205 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@42b84286
+[DEBUG] 2022-02-27 13:35:12.205 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@42b84286
+[DEBUG] 2022-02-27 13:35:12.205 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@42b84286
+[DEBUG] 2022-02-27 13:35:12.205 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@1f6917fb
+[DEBUG] 2022-02-27 13:35:12.206 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@5e7c141d
+[DEBUG] 2022-02-27 13:35:12.206 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@7640a5b1
+[DEBUG] 2022-02-27 13:35:12.206 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@7640a5b1
+[DEBUG] 2022-02-27 13:35:12.206 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@7640a5b1
+[DEBUG] 2022-02-27 13:35:12.207 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@70972170
+[DEBUG] 2022-02-27 13:35:12.208 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@70972170
+[DEBUG] 2022-02-27 13:35:12.208 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@70972170
+[DEBUG] 2022-02-27 13:35:12.208 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@20ab3e3a
+[DEBUG] 2022-02-27 13:35:12.209 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@102c577f
+[DEBUG] 2022-02-27 13:35:12.210 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@518bfd90
+[DEBUG] 2022-02-27 13:35:12.210 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@518bfd90
+[DEBUG] 2022-02-27 13:35:12.210 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7fb29ca9
+[DEBUG] 2022-02-27 13:35:12.211 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@1687eb01
+[DEBUG] 2022-02-27 13:35:12.211 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1687eb01
+[DEBUG] 2022-02-27 13:35:12.212 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@237f7970
+[DEBUG] 2022-02-27 13:35:12.212 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@237f7970
+[DEBUG] 2022-02-27 13:35:12.212 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@77a074b4
+[DEBUG] 2022-02-27 13:35:12.213 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@561b7d53
+[DEBUG] 2022-02-27 13:35:12.214 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@4228bf58
+[DEBUG] 2022-02-27 13:35:12.216 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@a5272be
+[DEBUG] 2022-02-27 13:35:12.216 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@a5272be
+[DEBUG] 2022-02-27 13:35:12.216 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4c58255
+[DEBUG] 2022-02-27 13:35:12.217 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@eac3a26
+[DEBUG] 2022-02-27 13:35:12.217 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@10b1a751
+[DEBUG] 2022-02-27 13:35:12.217 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@53cf9c99
+[DEBUG] 2022-02-27 13:35:12.217 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7b306b9f
+[DEBUG] 2022-02-27 13:35:12.217 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@142213d5
+[DEBUG] 2022-02-27 13:35:12.217 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@934b52f
+[DEBUG] 2022-02-27 13:35:12.217 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@2630dbc4
+[DEBUG] 2022-02-27 13:35:12.260 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2022-02-27 13:35:12.264 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2022-02-27 13:35:12.265 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2022-02-27 13:35:12.265 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2022-02-27 13:35:12.266 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2022-02-27 13:35:12.266 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2022-02-27 13:35:12.266 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2022-02-27 13:35:12.267 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2022-02-27 13:35:12.268 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2022-02-27 13:35:12.268 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2022-02-27 13:35:12.268 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2022-02-27 13:35:12.269 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2022-02-27 13:35:12.269 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2022-02-27 13:35:12.269 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2022-02-27 13:35:12.276 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/wdev
+[INFO ] 2022-02-27 13:35:12.276 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2022-02-27 13:35:12.276 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2022-02-27 13:35:12.483 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2022-02-27 13:35:12.726 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.28
+      major : 8
+      minor : 0
+[DEBUG] 2022-02-27 13:35:12.727 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2022-02-27 13:35:12.727 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2022-02-27 13:35:12.743 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2022-02-27 13:35:12.762 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2022-02-27 13:35:12.785 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2022-02-27 13:35:12.823 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2022-02-27 13:35:12.828 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7c663eaf] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3bb5ceb]
+[DEBUG] 2022-02-27 13:35:12.873 [main] AnnotationBinder - Binding entity from annotated class: com.palmerlarson.entity.User
+[DEBUG] 2022-02-27 13:35:12.889 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2022-02-27 13:35:12.892 [main] EntityBinder - Import with entity name User
+[DEBUG] 2022-02-27 13:35:12.894 [main] EntityBinder - Bind entity com.palmerlarson.entity.User on table user
+[DEBUG] 2022-02-27 13:35:12.923 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-02-27 13:35:12.925 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2022-02-27 13:35:12.926 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:id]
+[DEBUG] 2022-02-27 13:35:12.928 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2022-02-27 13:35:12.930 [main] PropertyBinder - Building property id
+[DEBUG] 2022-02-27 13:35:12.933 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2022-02-27 13:35:12.934 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-02-27 13:35:12.934 [main] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2022-02-27 13:35:12.934 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:email]
+[DEBUG] 2022-02-27 13:35:12.934 [main] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2022-02-27 13:35:12.934 [main] PropertyBinder - Building property email
+[DEBUG] 2022-02-27 13:35:12.934 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-02-27 13:35:12.935 [main] PropertyBinder - MetadataSourceProcessor property first_name with lazy=false
+[DEBUG] 2022-02-27 13:35:12.935 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:first_name]
+[DEBUG] 2022-02-27 13:35:12.935 [main] SimpleValueBinder - building SimpleValue for first_name
+[DEBUG] 2022-02-27 13:35:12.935 [main] PropertyBinder - Building property first_name
+[DEBUG] 2022-02-27 13:35:12.935 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=gross_income, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-02-27 13:35:12.935 [main] PropertyBinder - MetadataSourceProcessor property gross_income with lazy=false
+[DEBUG] 2022-02-27 13:35:12.935 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:gross_income]
+[DEBUG] 2022-02-27 13:35:12.935 [main] SimpleValueBinder - building SimpleValue for gross_income
+[DEBUG] 2022-02-27 13:35:12.935 [main] PropertyBinder - Building property gross_income
+[DEBUG] 2022-02-27 13:35:12.935 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-02-27 13:35:12.935 [main] PropertyBinder - MetadataSourceProcessor property last_name with lazy=false
+[DEBUG] 2022-02-27 13:35:12.935 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:last_name]
+[DEBUG] 2022-02-27 13:35:12.935 [main] SimpleValueBinder - building SimpleValue for last_name
+[DEBUG] 2022-02-27 13:35:12.935 [main] PropertyBinder - Building property last_name
+[DEBUG] 2022-02-27 13:35:12.939 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2022-02-27 13:35:12.941 [main] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2022-02-27 13:35:12.941 [main] SimpleValueBinder - Starting fillSimpleValue for first_name
+[DEBUG] 2022-02-27 13:35:12.942 [main] SimpleValueBinder - Starting fillSimpleValue for gross_income
+[DEBUG] 2022-02-27 13:35:12.942 [main] SimpleValueBinder - Starting fillSimpleValue for last_name
+[DEBUG] 2022-02-27 13:35:12.944 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2022-02-27 13:35:12.971 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2022-02-27 13:35:12.972 [main] Settings - SessionFactory name : null
+[DEBUG] 2022-02-27 13:35:12.972 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2022-02-27 13:35:12.972 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2022-02-27 13:35:12.972 [main] Settings - Statistics: disabled
+[DEBUG] 2022-02-27 13:35:12.972 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2022-02-27 13:35:12.973 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2022-02-27 13:35:12.973 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2022-02-27 13:35:12.973 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2022-02-27 13:35:12.973 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2022-02-27 13:35:12.973 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2022-02-27 13:35:12.973 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2022-02-27 13:35:12.974 [main] Settings - Default null ordering: NONE
+[DEBUG] 2022-02-27 13:35:12.974 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2022-02-27 13:35:12.974 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2022-02-27 13:35:12.974 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2022-02-27 13:35:12.974 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2022-02-27 13:35:12.974 [main] Settings - Query language substitutions: {}
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Named query checking : enabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Second-level cache: disabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - JDBC batch size: 15
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - JPA compliance - query : 
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2022-02-27 13:35:12.975 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2022-02-27 13:35:13.011 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2022-02-27 13:35:13.029 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2022-02-27 13:35:13.031 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/palmerlarson/IdeaProjects/IndieProject/target/test-classes:/Users/palmerlarson/IdeaProjects/IndieProject/target/classes:/Users/palmerlarson/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/palmerlarson/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/palmerlarson/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/palmerlarson/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/palmerlarson/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/palmerlarson/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/palmerlarson/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/palmerlarson/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/palmerlarson/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/palmerlarson/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/palmerlarson/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/palmerlarson/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/palmerlarson/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/palmerlarson/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/palmerlarson/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/palmerlarson/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/palmerlarson/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/palmerlarson/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/palmerlarson/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/palmerlarson/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/Users/palmerlarson/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/palmerlarson/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/palmerlarson/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/palmerlarson/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/palmerlarson/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/palmerlarson/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/palmerlarson/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/Users/palmerlarson/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.palmerlarson.persistence.UserDaoTest, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/palmerlarson, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2022-01-18, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, intellij.debug.agent=true, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, connection.password=palmer1995, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.14+8-LTS-263, user.name=palmerlarson, path.separator=:, hibernate.connection.username=****, os.version=12.2.1, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/wdev, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/7_/hjc2wkns2zj3yl0np9mvr3cm0000gn/T/, java.version=11.0.14, jboss.modules.system.pkgs=com.intellij.rt, user.dir=/Users/palmerlarson/IdeaProjects/IndieProject, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@40ce9049, java.library.path=/Users/palmerlarson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.14+8-LTS-263, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3306/wdev, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2022-02-27 13:35:13.048 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2022-02-27 13:35:13.048 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2022-02-27 13:35:13.050 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2022-02-27 13:35:13.050 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7c663eaf] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@63a9c661]
+[DEBUG] 2022-02-27 13:35:13.085 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.User] is safe
+[DEBUG] 2022-02-27 13:35:13.085 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.User
+[DEBUG] 2022-02-27 13:35:13.098 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.User] is safe
+[DEBUG] 2022-02-27 13:35:13.099 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.User
+[DEBUG] 2022-02-27 13:35:13.320 [main] AbstractEntityPersister - Static SQL for entity: com.palmerlarson.entity.User
+[DEBUG] 2022-02-27 13:35:13.321 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2022-02-27 13:35:13.321 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.email as email2_0_, user_.first_name as first_na3_0_, user_.gross_income as gross_in4_0_, user_.last_name as last_nam5_0_ from user user_ where user_.id=?
+[DEBUG] 2022-02-27 13:35:13.321 [main] AbstractEntityPersister -  Insert 0: insert into user (email, first_name, gross_income, last_name, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2022-02-27 13:35:13.321 [main] AbstractEntityPersister -  Update 0: update user set email=?, first_name=?, gross_income=?, last_name=? where id=?
+[DEBUG] 2022-02-27 13:35:13.321 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2022-02-27 13:35:13.322 [main] AbstractEntityPersister -  Identity insert: insert into user (email, first_name, gross_income, last_name) values (?, ?, ?, ?)
+[DEBUG] 2022-02-27 13:35:13.341 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@73bb573d]
+[DEBUG] 2022-02-27 13:35:13.343 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2022-02-27 13:35:13.343 [main] MetamodelGraphWalker - Visiting attribute path : first_name
+[DEBUG] 2022-02-27 13:35:13.343 [main] MetamodelGraphWalker - Visiting attribute path : gross_income
+[DEBUG] 2022-02-27 13:35:13.343 [main] MetamodelGraphWalker - Visiting attribute path : last_name
+[DEBUG] 2022-02-27 13:35:13.343 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-02-27 13:35:13.352 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-02-27 13:35:13.356 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2022-02-27 13:35:13.358 [main] EntityLoader - Static select for entity com.palmerlarson.entity.User [NONE]: select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.first_name as first_na3_0_0_, user0_.gross_income as gross_in4_0_0_, user0_.last_name as last_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-02-27 13:35:13.359 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2aa5bd48]
+[DEBUG] 2022-02-27 13:35:13.360 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2022-02-27 13:35:13.361 [main] MetamodelGraphWalker - Visiting attribute path : first_name
+[DEBUG] 2022-02-27 13:35:13.362 [main] MetamodelGraphWalker - Visiting attribute path : gross_income
+[DEBUG] 2022-02-27 13:35:13.362 [main] MetamodelGraphWalker - Visiting attribute path : last_name
+[DEBUG] 2022-02-27 13:35:13.362 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-02-27 13:35:13.363 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-02-27 13:35:13.364 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2022-02-27 13:35:13.365 [main] EntityLoader - Static select for entity com.palmerlarson.entity.User [READ]: select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.first_name as first_na3_0_0_, user0_.gross_income as gross_in4_0_0_, user0_.last_name as last_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-02-27 13:35:13.374 [main] Loader - Static select for action ACTION_MERGE on entity com.palmerlarson.entity.User: select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.first_name as first_na3_0_0_, user0_.gross_income as gross_in4_0_0_, user0_.last_name as last_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-02-27 13:35:13.374 [main] Loader - Static select for action ACTION_REFRESH on entity com.palmerlarson.entity.User: select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.first_name as first_na3_0_0_, user0_.gross_income as gross_in4_0_0_, user0_.last_name as last_nam5_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-02-27 13:35:13.393 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2022-02-27 13:35:13.393 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2022-02-27 13:35:13.394 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2022-02-27 13:35:13.401 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-02-27 13:35:13.401 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2022-02-27 13:35:13.402 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2022-02-27 13:35:13.402 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2022-02-27 13:35:13.404 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@22048bd6
+[DEBUG] 2022-02-27 13:35:13.407 [main] SessionFactoryRegistry - Registering SessionFactory: cae96c68-969c-44d2-8741-67549eac2dfb (<unnamed>)
+[DEBUG] 2022-02-27 13:35:13.407 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
