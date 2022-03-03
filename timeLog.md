@@ -43,3 +43,7 @@
 * Created 'user' database as initial database
 * Hibernate and Doa formation setup
 * CRUD unit tests created and are passing
+
+### 3/3/22
+* Completed Week 7 Exercise 
+* Investigating implementing cognito into Indie project
