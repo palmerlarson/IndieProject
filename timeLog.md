@@ -47,3 +47,13 @@
 ### 3/3/22
 * Completed Week 7 Exercise 
 * Investigating implementing cognito into Indie project
+
+### 3/6/22
+* Attempted adding cognito to indie project - running into a couple issues
+
+### 3/10/22
+* Completed Activities 1-2 for week 8
+
+### 3/11/22
+* Completed Activity 3 for week 8
+* Added ERD diagram to Indie project

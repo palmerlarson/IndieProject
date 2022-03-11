@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>e62962bd-cf61-4cbf-a903-b9d50f8df1e6.SCHEMA:wdev</OriginalElement>
+  <nodes>
+    <node x="0.0" y="203.0">e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.budgeter</node>
+    <node x="157.0" y="214.0">e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.goals</node>
+    <node x="399.0" y="192.0">e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.WDevel_Tool</node>
+    <node x="177.0" y="0.0">e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.user</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.budgeter" target="e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.user" relationship="REFERENCES">
+      <point x="0.0" y="-48.5" />
+      <point x="68.5" y="167.0" />
+      <point x="268.0" y="167.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.goals" target="e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.user" relationship="REFERENCES">
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.WDevel_Tool" target="e62962bd-cf61-4cbf-a903-b9d50f8df1e6.TABLE:wdev.user" relationship="REFERENCES">
+      <point x="0.0" y="-59.5" />
+      <point x="489.0" y="167.0" />
+      <point x="268.0" y="167.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="289.5" y="155.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
