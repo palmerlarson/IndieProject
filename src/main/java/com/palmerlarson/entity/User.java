@@ -41,7 +41,7 @@ public class User {
     }
 
     /**
-     * Instantiates a new Author.
+     * Instantiates a new user.
      *
      * @param first_name   the first name
      * @param last_name    the last name

@@ -57,3 +57,18 @@
 ### 3/11/22
 * Completed Activity 3 for week 8
 * Added ERD diagram to Indie project
+
+### 3/13/22
+* Gone till 3/20
+
+### 3/21/22
+* Worked on fixing codec issue with AWS Cognito
+
+### 3/22/22
+* switched db user_id -> id
+
+### 3/23/22
+* Cognito implemented
+* Deployed to Beanstalk
+* Error JSP added
+* I broke hibernate - Working on fixing it before submitting check-in #3
