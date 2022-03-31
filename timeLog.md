@@ -71,4 +71,13 @@
 * Cognito implemented
 * Deployed to Beanstalk
 * Error JSP added
-* I broke hibernate - Working on fixing it before submitting check-in #3
+* I broke hibernate - Working on fixing it before submitting checkpoint #3
+
+### 3/24/22
+* Met with team for team project
+
+### 3/29/22
+* Met with team for team project
+
+### 3/31/22
+* Working on importing user attributes to local sql db

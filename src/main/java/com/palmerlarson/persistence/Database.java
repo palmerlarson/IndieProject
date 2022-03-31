@@ -116,9 +116,9 @@ public class Database implements PropertiesLoader {
             }
 
         } catch (SQLException se) {
-            logger.error("SQL Exception" + se);
+            logger.error("SQL Exception A:" + se);
         } catch (Exception e) {
-            logger.error("Exception" + e);
+            logger.error("Exception B:" + e);
         } finally {
             disconnect();
         }

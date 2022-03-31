@@ -151,7 +151,7 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return gross_income == user.gross_income && id == user.id && first_name.equals(user.first_name) && last_name.equals(user.last_name) && user_email.equals(user.user_email);
+        return gross_income == user.gross_income && id == user.id && Objects.equals(first_name, user.first_name) && Objects.equals(last_name, user.last_name) && Objects.equals(user_email, user.user_email);
     }
 
     @Override

@@ -97,7 +97,6 @@ public class Auth extends HttpServlet implements PropertiesLoader {
                 userName = validate(tokenResponse);
                 req.setAttribute("userName", userName);
                 logger.debug(userName);
-                addToDatabase(userName);
             } catch (IOException e) {
                 logger.error("Error getting or validating the token: " + e.getMessage(), e);
                 RequestDispatcher dispatcher = req.getRequestDispatcher("error.jsp");
@@ -189,7 +188,6 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         // TODO decide what you want to do with the info!
         // for now, I'm just returning username for display back to the browser
         logger.error(userName);
-        addToDatabase(userName);
 
         return userName;
     }

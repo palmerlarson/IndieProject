@@ -49,7 +49,7 @@ public class UserDaoTest {
      */
     @Test
     void insertSuccess() {
-        User newUser = new User("Tim", "Timmy", "tim@gmail.com", 10000);
+        User newUser = new User("TEST", "Timmy", "tim@gmail.com", 10000);
         int id = dao.insert(newUser);
         assertNotEquals(0, id);
         User insertedUser = dao.getById(id);
