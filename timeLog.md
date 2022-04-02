@@ -81,3 +81,11 @@
 
 ### 3/31/22
 * Working on importing user attributes to local sql db
+
+### 4/1/22
+* infoPage setup to acquire local user data
+
+### 4/2/22
+* Local user data imported to local db upon submission
+* Need to find a way to correlate cognito user attributes and token authentication to local db
+* Checkpoint 3 ready for feedback

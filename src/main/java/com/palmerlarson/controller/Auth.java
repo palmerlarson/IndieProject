@@ -267,10 +267,12 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         }
     }
 
-    public void addToDatabase(String email) {
+    public void addToDatabase() {
         UserDao dao = new UserDao();
-        User newUser = new User("N/A", "N/A", email, 0);
+        User newUser = new User("N/A", "N/A", "email", 0);
         dao.insert(newUser);
+        logger.error("TEST DID THIS WORK?");
     }
+
 }
 

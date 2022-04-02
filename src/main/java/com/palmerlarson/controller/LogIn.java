@@ -1,5 +1,7 @@
 package com.palmerlarson.controller;
 
+import com.palmerlarson.entity.User;
+import com.palmerlarson.persistence.UserDao;
 import com.palmerlarson.util.PropertiesLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
 @WebServlet(
@@ -63,5 +66,9 @@ public class  LogIn extends HttpServlet implements PropertiesLoader {
         // TODO if properties weren't loaded properly, route to an error page
         String url = LOGIN_URL + "?response_type=code&client_id=" + CLIENT_ID + "&redirect_uri=" + REDIRECT_URL;
         resp.sendRedirect(url);
+
     }
+
+
+
 }
