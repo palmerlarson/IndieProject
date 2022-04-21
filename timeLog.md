@@ -89,3 +89,30 @@
 * Local user data imported to local db upon submission
 * Need to find a way to correlate cognito user attributes and token authentication to local db
 * Checkpoint 3 ready for feedback
+
+### 4/5/22
+* Hour meeting with Paul and Justin
+
+### 4/10/22
+* Hour meeting with team (Paul, Subu, Justin)
+
+### 4/11/22
+* 4ish hours into learning JAX-RS (Helpful starter -> https://crunchify.com/how-to-build-restful-service-with-java-using-jax-rs-and-jersey/)
+
+### 4/12/22
+* 5ish hours into team project functionality
+* Posted status update to team via slack
+
+### 4/13/22
+* 3.5 hour team meeting - Bug fixes, Frontend fix, presentation recorded
+
+### 4/14/22
+* Submitted Team Project
+
+### 4/20/22
+* Posted Team Project to Slack
+
+### 4/21/22
+* Updated student repo with my completed presentation link
+* Programmer 1 work for Week 10 ex
+* Indie Proj structural jsp design
