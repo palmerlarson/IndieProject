@@ -15,7 +15,7 @@
 
 ### 2/17/22
 * Edited User stories to identify MVP stories for focused development
-* Will now be updating timelog.m to document ALL courses work_
+* Will now be updating timelog.md to document ALL courses work_
 
 ### 2/20/22
 * Week 5 exercise completed. Practice with OneToMany and ManyToMany in hibernate.
