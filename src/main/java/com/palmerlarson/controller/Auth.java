@@ -85,6 +85,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String authCode = req.getParameter("code");
         String userName = null;
+        String email = null;
 
         if (authCode == null) {
             //forward to an error page or back to the login
@@ -94,9 +95,13 @@ public class Auth extends HttpServlet implements PropertiesLoader {
             HttpRequest authRequest = buildAuthRequest(authCode);
             try {
                 TokenResponse tokenResponse = getToken(authRequest);
-                userName = validate(tokenResponse);
+                userName = validate(tokenResponse)[0];
+                email = validate(tokenResponse)[1];
                 req.setAttribute("userName", userName);
+                req.setAttribute("email", email);
+                addToDatabase(email);
                 logger.debug(userName);
+                logger.debug(email);
             } catch (IOException e) {
                 logger.error("Error getting or validating the token: " + e.getMessage(), e);
                 RequestDispatcher dispatcher = req.getRequestDispatcher("error.jsp");
@@ -144,7 +149,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
      * @return
      * @throws IOException
      */
-    private String validate(TokenResponse tokenResponse) throws IOException {
+    private String[] validate(TokenResponse tokenResponse) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         CognitoTokenHeader tokenHeader = mapper.readValue(CognitoJWTParser.getHeader(tokenResponse.getIdToken()).toString(), CognitoTokenHeader.class);
 
@@ -181,6 +186,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         // Verify the token
         DecodedJWT jwt = verifier.verify(tokenResponse.getIdToken());
         String userName = jwt.getClaim("cognito:username").asString();
+        String email = jwt.getClaim("email").asString();
         logger.debug("here's the username: " + userName);
 
         logger.debug("here are all the available claims: " + jwt.getClaims());
@@ -189,7 +195,8 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         // for now, I'm just returning username for display back to the browser
         logger.error(userName);
 
-        return userName;
+        String[] atts = {userName, email};
+        return atts;
     }
 
     /** Create the auth url and use it to build the request.
@@ -267,9 +274,9 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         }
     }
 
-    public void addToDatabase() {
+    public void addToDatabase(String email) {
         UserDao dao = new UserDao();
-        User newUser = new User("N/A", "N/A", "email", 0);
+        User newUser = new User("N/A", "N/A", email, 0);
         dao.insert(newUser);
         logger.error("TEST DID THIS WORK?");
     }

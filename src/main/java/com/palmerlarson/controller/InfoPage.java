@@ -6,6 +6,7 @@ import com.palmerlarson.persistence.UserDao;
 import com.palmerlarson.util.PropertiesLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.palmerlarson.auth.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,6 +22,7 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     public boolean isFullySetup = false;
+    public String name = "";
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage.jsp");
@@ -33,6 +35,7 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         int grossIncome = Integer.parseInt(req.getParameter("income"));
         System.out.println(firstName + lastName + grossIncome);
 
+
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
         out.println("<h1>Your profile has been fully setup!</h1>");
@@ -41,7 +44,8 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         out.println("<p>Email: " + "holder" + "</p>");
         out.println("<p>Income: " + grossIncome + "</p>");
 
-        if (isFullySetup == false) {
+
+        if (!isFullySetup) {
             addToDatabase(firstName, lastName, "test", grossIncome);
             isFullySetup = true;
         } else {
@@ -57,6 +61,7 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         logger.error("TEST DID THIS WORK?");
 
     }
+
 
 
 }
