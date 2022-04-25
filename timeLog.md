@@ -116,3 +116,6 @@
 * Updated student repo with my completed presentation link
 * Programmer 1 work for Week 10 ex
 * Indie Proj structural jsp design
+
+### 4/25/22
+* Fixed AWS RDS issues 
