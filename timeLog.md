@@ -119,3 +119,8 @@
 
 ### 4/25/22
 * Fixed AWS RDS issues 
+
+### 4/28/22
+* TailWind CSS implemented
+* JSP index page styling added
+* Logo generated
