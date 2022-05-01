@@ -11,8 +11,8 @@ import java.io.IOException;
 /**
  * Class used as practice - will be used as main graph creation class
  */
-public class Grapher {
-    public static void main(String[] args) throws IOException {
+public class Graphed {
+    private static void main(String[] args) throws IOException {
         String P1 = "Player 1";
         String P2 = "Player 2";
         String Attk = "Attack";
