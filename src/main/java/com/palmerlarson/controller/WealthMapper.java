@@ -1,6 +1,7 @@
 package com.palmerlarson.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import javax.servlet.RequestDispatcher;
@@ -27,15 +28,12 @@ public class WealthMapper extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-//        JSONObject obj = new JSONObject();
-//        req.getInputStream();
-
         BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()));
-        String json = br.readLine();
+        JSONArray arr = new JSONArray(br.readLine());
 
-        resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        out.println(json);
+//        out.println(json);
+        out.print(arr);
 
 
         // 4. Set response type to JSON
