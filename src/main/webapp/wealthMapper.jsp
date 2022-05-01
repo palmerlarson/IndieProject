@@ -13,38 +13,33 @@
 <%@include file="includes/header.jsp"%>
 
 <div class="flex">
-    <div class="w-2/5 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl">
+    <div class="w-2/5 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl mx-4">
         <h4 class="text-lg font-bold">Assets</h4>
         <form action="wealthMapper" method="POST">
             <div>
-                <label for="iName">Name:</label>
-                <input class="nameIncome mb-2 text-sm font-bold text-gray-700" type="text" name="iName" id="iName" />
+                <label for="name">Name:</label>
+                <input class="nameIncome mb-2 text-sm font-bold text-gray-700" type="text" name="name" id="name" />
             </div>
             <div>
-                <label for="iAmount">Amount:</label>
-                <input class="income mb-2 text-sm font-bold text-gray-700" type="number" name="iAmount" id="iAmount" />
+                <label for="amount">Amount:</label>
+                <input class="income mb-2 text-sm font-bold text-gray-700" type="number" name="amount" id="amount" />
             </div>
-            <button class="rounded border border-gray-400 bg-white py-2 px-4 font-semibold text-gray-800 shadow hover:bg-gray-100" type="button" onclick="addToArray(w)">Add</button>
+            <div>
+                <label for="type">Type:</label>
+                <select name="type" id="type">
+                    <option value="wealth">Wealth</option>
+                    <option value="debt">Debt</option>
+                </select>
+            </div>
+
+            <button class="rounded border border-gray-400 bg-white py-2 px-4 font-semibold text-gray-800 shadow hover:bg-gray-100 mt-2" type="button" onclick="addToArray()">Add</button>
         </form>
-        <br />
-        <h4 class="text-lg font-bold">Debt</h4>
-        <form action="wealthMapper" method="POST">
-            <div>
-                <label for="iName">Name:</label>
-                <input class="nameIncome mb-2 text-sm font-bold text-gray-700" type="text" name="iName" id="iName" />
-            </div>
-            <div>
-                <label for="iAmount">Amount:</label>
-                <input class="income mb-2 text-sm font-bold text-gray-700" type="number" name="iAmount" id="iAmount" />
-            </div>
-            <button class="rounded border border-gray-400 bg-white py-2 px-4 font-semibold text-gray-800 shadow hover:bg-gray-100" type="button" onclick="addToArray(d)">Add</button>
-        </form>
-        <br />
+        <br>
         <button class="rounded border border-gray-400 bg-green-400 py-2 px-4 font-semibold text-gray-800 shadow hover:bg-green-500" type="button" onclick="submit()">Submit</button>
     </div>
 
-    <div class="output w-3/5 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl ml-4">
-        <h1 class="text-xl font-bold">Wealth & Debt</h1>
+    <div class="output w-3/5 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl mx-4">
+        <h1 class="text-xl font-bold mb-1">Wealth & Debt</h1>
         <ul class="list"></ul>
     </div>
 </div>
