@@ -43,7 +43,15 @@ const deleteItem = item => {
 
 //sends the json arr to servlet
 const submit = () => {
-    let displayDiv = document.querySelector(".output");
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "wealthMapper", true);
+    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.onreadystatechange = () => {
+        if(xhr.readyState === 4) {
+            alert(xhr.response)
+        }
+    }
+    xhr.send(JSON.stringify(worth));
 }
 
 console.log(worth);
