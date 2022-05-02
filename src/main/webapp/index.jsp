@@ -1,13 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-<head>
-    <title>wDev - Homepage</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
+<%@include file="includes/head.jsp"%>
+<body class="dark:bg-gray-900 w-full">
 <c:choose>
     <c:when test="${empty userName}">
         <%@include file="includes/noAuthHeader.jsp"%>
@@ -20,8 +14,10 @@
             <h3>Welcome ${userName}</h3>
             <h3>Email ${email}</h3>
             <p>Finish your sign up <a href="infoPage">here.</a></p>
+            <p>Go to your dashboard <a href="infoPage">here.</a></p>
         </div>
     </c:otherwise>
 </c:choose>
+<%@include file="includes/footer.jsp"%>
 </body>
 </html>

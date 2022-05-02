@@ -1,14 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-<head>
-    <title>wDev - WealthMapper</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="https://kit.fontawesome.com/ae280f9e8b.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/mapper.js" async></script>
-</head>
+<%@include file="includes/head.jsp"%>
 <body>
 <%@include file="includes/header.jsp"%>
 
@@ -48,5 +40,7 @@
 <div class="output">
     <ul class="list"></ul>
 </div>
+
+<%@include file="includes/footer.jsp"%>
 </body>
 </html>

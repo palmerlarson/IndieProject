@@ -10,7 +10,7 @@
   <packaging>war</packaging>
 
   <name>IndieProject Maven Webapp</name>
-  <url>http://www.wdevEval.com</url>
+  <url>https://www.wdevEval.com</url>
 
   <properties>
     <hibernate-version>5.4.4.Final</hibernate-version>
