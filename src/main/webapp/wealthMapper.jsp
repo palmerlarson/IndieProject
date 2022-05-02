@@ -4,7 +4,7 @@
 <body>
 <%@include file="includes/header.jsp"%>
 
-<div class="flex">
+<div class="flex mt-8">
     <div class="w-2/4 ml-20 mr-2 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl">
         <h4 class="text-lg font-bold">Assets</h4>
         <form class="formInput" action="wealthMapper" method="POST">
@@ -30,7 +30,7 @@
         <button class="rounded border border-gray-400 bg-green-400 py-2 px-4 font-semibold text-gray-800 shadow hover:bg-green-500" type="button" onclick="submit()">Submit</button>
     </div>
 
-    <div class="output w-2/4 mr-20 ml-2 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl">
+    <div class="output w-2/4 mr-20 ml-2 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl z-10">
         <h1 class="text-xl font-bold mb-1">Wealth & Debt</h1>
         <ul class="list"></ul>
     </div>

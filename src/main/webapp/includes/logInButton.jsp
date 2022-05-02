@@ -1,4 +1,4 @@
-<div class="text-center py-28 rounded-xl drop-shadow-2xl bg-orange-50 w-2/5 m-auto">
+<div class="text-center py-28 rounded-xl drop-shadow-2xl bg-orange-50 w-2/5 m-auto mt-8">
     <button type="button" class="rounded-lg bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 px-5 py-2.5 text-center align-middle text-sm font-medium text-black hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800" onclick="window.location.href='logIn'">Log In</button>
     <p class="mt-4 text-sm"><u><a href="https://palmer-indie-project.auth.us-east-2.amazoncognito.com/signup?response_type=code&client_id=24p8k6rju9rjg2inpa8p64n4t4&redirect_uri=https://Indieproject-env.eba-rqviw5bv.us-east-2.elasticbeanstalk.com/auth">Sign up here</a></u></p>
 </div>

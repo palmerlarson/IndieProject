@@ -1,4 +1,4 @@
-<header class="sticky">
+<header class="sticky border-b">
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href=index class="flex items-center">
@@ -17,8 +17,7 @@
                 <!-- Dropdown menu -->
                 <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown">
                     <div class="py-3 px-4">
-                        <span class="block text-sm text-gray-900 dark:text-white">${userName}</span>
-                        <span class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">${email}</span>
+                        <span class="block text-sm text-gray-900 dark:text-white"><a href="logIn">Log In</a></span>
                     </div>
                     <ul class="py-1" aria-labelledby="dropdown">
                         <li>
@@ -29,9 +28,6 @@
                         </li>
                         <li>
                             <a href="wealthMapper" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Tools</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
                         </li>
                     </ul>
                 </div>
