@@ -22,8 +22,8 @@ public class User {
     @Column(name = "last_name")
     private String last_name;
 
-    @Column(name = "user_email")
-    private String user_email;
+    @Column(name = "userName")
+    private String userName;
 
     @Column(name = "gross_income")
     private int gross_income;
@@ -45,13 +45,13 @@ public class User {
      *
      * @param first_name   the first name
      * @param last_name    the last name
-     * @param user_email   the user email
+     * @param userName   the userName
      * @param gross_income the gross income
      */
-    public User(String first_name, String last_name, String user_email, int gross_income) {
+    public User(String first_name, String last_name, String userName, int gross_income) {
         this.first_name = first_name;
         this.last_name = last_name;
-        this.user_email = user_email;
+        this.userName = userName;
         this.gross_income = gross_income;
         this.id = id;
     }
@@ -111,21 +111,21 @@ public class User {
     }
 
     /**
-     * Gets user email.
+     * Gets userName.
      *
-     * @return the user email
+     * @return the userName
      */
-    public String getUser_email() {
-        return user_email;
+    public String getUserName() {
+        return userName;
     }
 
     /**
-     * Sets user email.
+     * Sets userName.
      *
-     * @param user_email the user email
+     * @param userName the username
      */
-    public void setUser_email(String user_email) {
-        this.user_email = user_email;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     /**
@@ -151,11 +151,11 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return gross_income == user.gross_income && id == user.id && Objects.equals(first_name, user.first_name) && Objects.equals(last_name, user.last_name) && Objects.equals(user_email, user.user_email);
+        return gross_income == user.gross_income && id == user.id && Objects.equals(first_name, user.first_name) && Objects.equals(last_name, user.last_name) && Objects.equals(userName, user.userName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(first_name, last_name, user_email, gross_income, id);
+        return Objects.hash(first_name, last_name, userName, gross_income, id);
     }
 }

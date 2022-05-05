@@ -99,6 +99,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
                 email = validate(tokenResponse)[1];
                 req.setAttribute("userName", userName);
                 req.setAttribute("email", email);
+                addToDatabase(userName);
                 logger.debug(userName);
                 logger.debug(email);
             } catch (IOException e) {
@@ -273,11 +274,16 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         }
     }
 
-    public void addToDatabase(String email) {
+    public void addToDatabase(String userName) {
         UserDao dao = new UserDao();
-        User newUser = new User("N/A", "N/A", email, 0);
-        dao.insert(newUser);
-        logger.error("TEST DID THIS WORK?");
+        if (dao.getByUserName(userName) == null) {
+            User newUser = new User("empty", "empty", userName, 0);
+            try {
+                dao.insert(newUser);
+            } catch (Exception e) {
+                logger.error("Error loading properties" + e.getMessage(), e);
+            }
+        }
     }
 
 }

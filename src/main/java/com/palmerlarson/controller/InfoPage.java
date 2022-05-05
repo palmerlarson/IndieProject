@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Properties;
 
 
 public class InfoPage extends HttpServlet implements PropertiesLoader {
@@ -23,8 +24,20 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
     private final Logger logger = LogManager.getLogger(this.getClass());
     public boolean isFullySetup = false;
     public String name = "";
+    Properties properties;
+    public static String CLIENT_ID;
+    public static String LOGIN_URL;
+    public static String REDIRECT_URL;
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        CLIENT_ID = properties.getProperty("client.id");
+
+        resp.setContentType("text/html");
+        PrintWriter out = resp.getWriter();
+        out.println(CLIENT_ID);
+
+
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage.jsp");
         dispatcher.forward(req, resp);
     }
@@ -61,6 +74,8 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         logger.error("TEST DID THIS WORK?");
 
     }
+
+
 
 
 
