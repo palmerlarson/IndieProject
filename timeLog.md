@@ -124,3 +124,14 @@
 * TailWind CSS implemented
 * JSP index page styling added
 * Logo generated
+
+
+### 5/1/22
+* Indie Project work - JSON sent to servlet to create graph
+
+### 5/5/22
+* Fixed Cognito Issues
+* Fixed Hibernate -> RDS issues
+* Login/auth -> opens session
+* Logout -> ends session
+* userName returned to session
