@@ -14,28 +14,22 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Properties;
 
-
+@WebServlet(
+        urlPatterns = {"/infoPage"}
+)
 public class InfoPage extends HttpServlet implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     public boolean isFullySetup = false;
-    public String name = "";
-    Properties properties;
-    public static String CLIENT_ID;
-    public static String LOGIN_URL;
-    public static String REDIRECT_URL;
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        CLIENT_ID = properties.getProperty("client.id");
 
-        resp.setContentType("text/html");
-        PrintWriter out = resp.getWriter();
-        out.println(CLIENT_ID);
-
+        pullName(req, resp, logger);
 
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage.jsp");
@@ -75,7 +69,18 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
 
     }
 
+    public static void pullName(HttpServletRequest req, HttpServletResponse resp, Logger logger) {
+        try {
+            resp.setContentType("text/html");
+            HttpSession session=req.getSession(true);
+            User uObj = (User)session.getAttribute("currentUser");
+            String uName = uObj.getUserName();
+            req.setAttribute("userName", uName);
 
+        } catch(Exception e){
+            logger.error("INFO" + e);
+        }
+    }
 
 
 

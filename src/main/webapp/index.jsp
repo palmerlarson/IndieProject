@@ -12,7 +12,6 @@
 
         <div class="m-auto w-2/5 rounded-xl bg-orange-50 py-40 text-center drop-shadow-2xl">
             <h3>Welcome ${userName}</h3>
-            <h3>Email ${email}</h3>
             <p>Finish your sign up <a href="infoPage">here.</a></p>
             <p>Go to your dashboard <a href="infoPage">here.</a></p>
         </div>
