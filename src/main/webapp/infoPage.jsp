@@ -10,6 +10,10 @@
     <input type="number" name="income" />
     <input type="submit" value="submit"/>
 </form>
+
+
+<h1>${userName}</h1>
+
 <%@include file="includes/footer.jsp"%>
 </body>
 </html>

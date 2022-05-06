@@ -87,5 +87,13 @@ public class UserDaoTest {
         assertEquals(3, Users.size());
     }
 
+    @Test
+    void getUserName() {
+        String name = "test";
+        User test = dao.getById(3);
+        User pullUser = dao.getByUserName(name);
+        assertEquals(test, pullUser);
+    }
+
 
 }

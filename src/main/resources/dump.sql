@@ -26,7 +26,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(25) NOT NULL,
   `last_name` varchar(25) NOT NULL,
-  `user_email` varchar(70) NOT NULL,
+  `userName` varchar(70) NOT NULL,
   `gross_income` int(18) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id_uindex` (`id`)
@@ -39,7 +39,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'Kathy','Sierra', 'kathy@gmail.com', 100000),(2,'Herbert','Schilt', 'herbert@gmail.com', 65000),(3,'Joseph','Ottinger', 'test@gmail.com', 33000);
+INSERT INTO `user` VALUES (1,'Kathy','Sierra', 'kathys', 100000),(2,'Herbert','Schilt', 'herbertll', 65000),(3,'Joseph','Ottinger', 'test', 33000);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 

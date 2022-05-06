@@ -20,6 +20,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigInteger;
@@ -99,6 +100,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
                 email = validate(tokenResponse)[1];
                 req.setAttribute("userName", userName);
                 req.setAttribute("email", email);
+                addToDatabase(req, userName);
                 logger.debug(userName);
                 logger.debug(email);
             } catch (IOException e) {
@@ -273,11 +275,22 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         }
     }
 
-    public void addToDatabase(String email) {
+    public void addToDatabase(HttpServletRequest req, String userName) {
         UserDao dao = new UserDao();
-        User newUser = new User("N/A", "N/A", email, 0);
-        dao.insert(newUser);
-        logger.error("TEST DID THIS WORK?");
+        if (dao.getByUserName(userName) == null) {
+            User newUser = new User("empty", "empty", userName, 0);
+            HttpSession session = req.getSession();
+            session.setAttribute("currentUser", newUser);
+            try {
+                dao.insert(newUser);
+            } catch (Exception e) {
+                logger.error("Error loading properties" + e.getMessage(), e);
+            }
+        } else {
+            User existingUser = dao.getByUserName(userName);
+            HttpSession session = req.getSession();
+            session.setAttribute("currentUser", existingUser);
+        }
     }
 
 }

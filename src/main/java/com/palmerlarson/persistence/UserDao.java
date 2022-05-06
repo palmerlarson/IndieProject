@@ -7,8 +7,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
+import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
@@ -113,4 +115,25 @@ public class UserDao {
 
         return users;
     }
+
+    public User getByUserName(String name) {
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<User> query = builder.createQuery(User.class);
+        Root<User> root = query.from(User.class);
+        Expression<String> propertyPath = root.get("userName");
+        query.where(builder.equal(propertyPath, name));
+        User user;
+
+        try {
+            user = session.createQuery(query).getSingleResult();
+        } catch (NoResultException res) {
+            logger.info("There was no result: ", res);
+            user = null;
+        }
+
+        session.close();
+        return user;
+    }
+
 }
