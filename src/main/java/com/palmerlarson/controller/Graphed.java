@@ -1,42 +1,33 @@
 package com.palmerlarson.controller;
 
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartUtils;
-import org.jfree.chart.JFreeChart;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.data.category.DefaultCategoryDataset;
-import java.io.File;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
  * Class used as practice - will be used as main graph creation class
  */
-public class Graphed {
-    private static void main(String[] args) throws IOException {
-        String P1 = "Player 1";
-        String P2 = "Player 2";
-        String Attk = "Attack";
-        String Def = "Defense";
-        String Speed = "Speed";
-        String Stealth = "Stealth";
+@WebServlet(
+        urlPatterns = {"/graphs"}
+)
+public class Graphed extends HttpServlet {
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
-        DefaultCategoryDataset dataset = new DefaultCategoryDataset( );
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        InfoPage.pullName(req, resp, logger);
 
-        // Player 1
-        dataset.addValue(10, P1, Attk);
-        dataset.addValue(7, P1, Def);
-        dataset.addValue(6, P1, Speed);
-        dataset.addValue(6, P1, Stealth);
 
-        // Player 2
-        dataset.addValue(7, P2, Attk);
-        dataset.addValue(9, P2, Def);
-        dataset.addValue(8, P2, Speed);
-        dataset.addValue(8, P2, Stealth);
-
-        JFreeChart barChart = ChartFactory.createBarChart("JFreeChart BarChart", "Players", "Points",
-                dataset, PlotOrientation.VERTICAL, true, true, false);
-
-        ChartUtils.saveChartAsPNG(new File("/Users/palmerlarson/IdeaProjects/IndieProject/GraphCharts/chart.png"), barChart, 650, 400);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/graphs.jsp");
+        dispatcher.forward(req, resp);
     }
+
+
+
 }

@@ -12,7 +12,7 @@ const addToArray = () => {
     if (name == null || amount == null) {
         alert("You must enter values for both fields");
     } else {
-        worth.push({"name": name, "income": amount, "type": type});
+        worth.push({"name": name, "amount": amount, "type": type});
     }
 
     //display
@@ -42,16 +42,20 @@ const deleteItem = item => {
 }
 
 //sends the json arr to servlet
+//https://stackoverflow.com/questions/42924898/when-trying-to-put-the-image-png-response-of-an-xmlhttprequest-i-am-getting-garb
 const submit = () => {
+    let imgDiv = document.querySelector(".imgOutput");
     let xhr = new XMLHttpRequest();
+    let image = document.getElementById("captchaImg");
     xhr.open("POST", "wealthMapper", true);
-    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.responseType = "arraybuffer";
+    xhr.setRequestHeader("Content-type", "image/png");
     xhr.onreadystatechange = () => {
         if(xhr.readyState === 4) {
-            alert(xhr.response)
+            image.classList.remove("invisible");
+            image.setAttribute('src', 'data:image/png;base64,' + btoa(String.fromCharCode.apply(null, new Uint8Array(xhr.response))));
+            console.log(xhr.response)
         }
     }
     xhr.send(JSON.stringify(worth));
 }
-
-console.log(worth);
