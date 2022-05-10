@@ -1,6 +1,7 @@
 package com.palmerlarson.controller;
 
 import com.palmerlarson.entity.User;
+import com.palmerlarson.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jfree.chart.ChartFactory;
@@ -33,6 +34,15 @@ public class WealthMapper extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         InfoPage.pullName(req, resp, logger);
+        HttpSession session=req.getSession(true);
+//        User uObj =  (User)session.getAttribute("currentUser");
+        UserDao dao = new UserDao();
+        User uObj = dao.getById(1);
+        int income = uObj.getGross_income();
+        int monthlyIncome = income / 12;
+        req.setAttribute("mIncome", monthlyIncome);
+
+
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/wealthMapper.jsp");
         dispatcher.forward(req, resp);
@@ -46,7 +56,9 @@ public class WealthMapper extends HttpServlet {
         BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()));
         JSONArray arr = new JSONArray(br.readLine());
         HttpSession session=req.getSession(true);
-        User uObj = (User)session.getAttribute("currentUser");
+//        User uObj = (User)session.getAttribute("currentUser");
+        UserDao dao = new UserDao();
+        User uObj = dao.getById(1);
 
         try (OutputStream out = resp.getOutputStream()) {
             DefaultCategoryDataset dataset = new DefaultCategoryDataset();
@@ -70,20 +82,13 @@ public class WealthMapper extends HttpServlet {
                 } else if (Objects.equals(type, "debt")) {
                     totalDebt += amount;
                 }
-//                dataset.addValue(amount, name, type);
                 pieSet.setValue("Debt", amount);
             }
 
             pieSet.setValue("Debt", totalDebt);
             pieSet.setValue("Wealth", totalWealth);
 
-//            JFreeChart barChart = ChartFactory.createBarChart("W&D Bar Chart", "Wealth & Debt", "Amount",
-//                    dataset, PlotOrientation.VERTICAL, true, true, false);
-
             JFreeChart pieChart = ChartFactory.createPieChart("Pie Chart", pieSet, true, true, false);
-
-//            ChartUtils.saveChartAsPNG(new File("/Users/palmerlarson/IdeaProjects/IndieProject/src/main/webapp/images/GraphCharts/barChart.png"), barChart, 650, 400);
-//            ChartUtils.saveChartAsPNG(new File("/Users/palmerlarson/IdeaProjects/IndieProject/src/main/webapp/images/GraphCharts/pieChart.png"), pieChart, 650, 400);
 
             resp.setContentType("image/png");
 
@@ -91,11 +96,13 @@ public class WealthMapper extends HttpServlet {
         } catch (Exception e) {
             System.err.println(e.toString()); /* Throw exceptions to log files */
         }
-        /* Close the output stream */
 
-        // 4. Set response type to JSON
-//        resp.setContentType("application/json");
         RequestDispatcher dispatcher = req.getRequestDispatcher("/wealthMapper.jsp");
         dispatcher.forward(req, resp);
     }
+
+//
+//    protected void evaluator(wealth, debt) {
+//
+//    }
 }
