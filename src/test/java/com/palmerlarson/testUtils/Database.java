@@ -25,13 +25,13 @@ public class Database {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    private static Database instance = new Database();
+    private static final Database instance = new Database();
 
     private Properties properties;
 
     private Connection connection;
 
-    private static final String DATABASE_PROPERTIES_FILE = "/database.properties";
+    private static final String DATABASE_PROPERTIES_FILE = "database.properties";
 
     /**
      * Create the database class

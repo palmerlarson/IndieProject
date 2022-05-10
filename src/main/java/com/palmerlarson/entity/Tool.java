@@ -26,8 +26,9 @@ public class Tool {
     @Column(name = "negative_asset")
     private int negative_asset;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="user_id", foreignKey=@ForeignKey(name="id"))
+    @OneToOne()
+    @JoinColumn(name="user_id", foreignKey=@ForeignKey(name="tool_user_fk"))
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private User user_id;
 
     public Tool(int positive_asset, int negative_asset, User user_id) {

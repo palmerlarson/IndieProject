@@ -6,6 +6,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import java.util.List;
 
 public class ToolDao {
 
@@ -29,68 +35,68 @@ public class ToolDao {
     }
 
 
-//    /**
-//     * Save or update.
-//     *
-//     * @param user the user
-//     */
-//    public void saveOrUpdate(User user) {
-//        Session session = sessionFactory.openSession();
-//        Transaction transaction = session.beginTransaction();
-//        session.saveOrUpdate(user);
-//        transaction.commit();
-//        session.close();
-//    }
-//
-//
-//    /**
-//     * Insert int.
-//     *
-//     * @param user the user
-//     * @return the int
-//     */
-//    public int insert(User user) {
-//        int id = 0;
-//        Session session = sessionFactory.openSession();
-//        Transaction transaction = session.beginTransaction();
-//        id = (int)session.save(user);
-//        transaction.commit();
-//        session.close();
-//        return id;
-//    }
-//
-//
-//    /**
-//     * Delete.
-//     *
-//     * @param user the user
-//     */
-//    public void delete(User user) {
-//        Session session = sessionFactory.openSession();
-//        Transaction transaction = session.beginTransaction();
-//        session.delete(user);
-//        transaction.commit();
-//        session.close();
-//    }
-//
-//
-//    /**
-//     * Gets all.
-//     *
-//     * @return the all
-//     */
-//    public List<User> getAll() {
-//
-//        Session session = sessionFactory.openSession();
-//
-//        CriteriaBuilder builder = session.getCriteriaBuilder();
-//        CriteriaQuery<User> query = builder.createQuery( User.class );
-//        Root<User> root = query.from( User.class );
-//        List<User> users = session.createQuery( query ).getResultList();
-//
-//        logger.debug("The list of users " + users);
-//        session.close();
-//
-//        return users;
-//    }
+    /**
+     * Save or update.
+     *
+     * @param tool the user
+     */
+    public void saveOrUpdate(Tool tool) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.saveOrUpdate(tool);
+        transaction.commit();
+        session.close();
+    }
+
+
+    /**
+     * Insert int.
+     *
+     * @param tool the user
+     * @return the int
+     */
+    public int insert(Tool tool) {
+        int id = 0;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(tool);
+        transaction.commit();
+        session.close();
+        return id;
+    }
+
+
+    /**
+     * Delete.
+     *
+     * @param tool the user
+     */
+    public void delete(Tool tool) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(tool);
+        transaction.commit();
+        session.close();
+    }
+
+
+    /**
+     * Gets all.
+     *
+     * @return the all
+     */
+    public List<Tool> getAll() {
+
+        Session session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Tool> query = builder.createQuery( Tool.class );
+        Root<Tool> root = query.from( Tool.class );
+        List<Tool> tools = session.createQuery( query ).getResultList();
+
+        logger.debug("The list of users " + tools);
+        session.close();
+
+        return tools;
+    }
 }
