@@ -75,8 +75,13 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
             HttpSession session=req.getSession(true);
             User uObj = (User)session.getAttribute("currentUser");
             String uName = uObj.getUserName();
+            String fName = uObj.getFirst_name();
+            String lName = uObj.getLast_name();
+            int income = uObj.getGross_income();
             req.setAttribute("userName", uName);
-
+            req.setAttribute("fName", fName);
+            req.setAttribute("lName", lName);
+            req.setAttribute("income", income);
         } catch(Exception e){
             logger.error("INFO" + e);
         }

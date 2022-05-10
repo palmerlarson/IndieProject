@@ -5,9 +5,12 @@
 <%@include file="includes/header.jsp"%>
 
 <form action="infoPage" method="POST">
-    <input type="text" name="fName" />
-    <input type="text" name="lName" />
-    <input type="number" name="income" />
+    <label for="firstName">First Name</label>
+    <input type="text" name="fName" id="firstName"/>
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lName" id="lastName"/>
+    <label for="gross_income">Gross Yearly Income</label>
+    <input type="number" name="income" id="gross_income"/>
     <input type="submit" value="submit"/>
 </form>
 

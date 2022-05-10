@@ -1403,3 +1403,25 @@ java.lang.NullPointerException: inStream parameter is null
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) [junit-rt.jar:?]
 [ERROR] 2022-05-09 21:55:51.701 [main] Database - java.lang.NullPointerException
 [DEBUG] 2022-05-09 21:55:55.419 [main] ToolDao - The list of users [com.palmerlarson.entity.Tool@9de6ecb7, com.palmerlarson.entity.Tool@9de76116, com.palmerlarson.entity.Tool@9de7d575, com.palmerlarson.entity.Tool@9de849d4]
+[ERROR] 2022-05-10 10:36:13.036 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 10:36:13.444 [http-nio-8080-exec-7] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 10:46:36.026 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 10:46:36.468 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 10:57:06.343 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 10:57:06.797 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 10:58:06.878 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 10:58:07.339 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:01:01.156 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:01:01.586 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:12:09.444 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:12:09.932 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:14:13.675 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:14:14.166 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:17:30.294 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:17:30.707 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:23:16.599 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:23:17.073 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:25:43.416 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:25:43.901 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:45:09.779 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 11:45:10.218 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
