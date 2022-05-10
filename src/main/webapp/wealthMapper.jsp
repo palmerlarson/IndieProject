@@ -14,7 +14,7 @@
             </div>
             <div>
                 <label for="amount">Amount:</label>
-                <input class="income mb-2 text-sm font-bold text-gray-700" type="number" name="amount" id="amount" />
+                <input class="amount mb-2 text-sm font-bold text-gray-700" type="number" name="amount" id="amount" />
             </div>
             <div>
                 <label for="type">Type:</label>
@@ -37,8 +37,9 @@
 </div>
 
 
-<div class="output">
-    <ul class="list"></ul>
+<div class="imgOutput">
+    <img class="invisible" id="captchaImg"  alt="img" src="#"/>
+
 </div>
 
 <%@include file="includes/footer.jsp"%>

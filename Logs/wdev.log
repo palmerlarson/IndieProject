@@ -1,0 +1,527 @@
+[DEBUG] 2022-05-09 21:55:51.727 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2022-05-09 21:55:51.728 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2022-05-09 21:55:51.731 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2022-05-09 21:55:51.784 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2022-05-09 21:55:51.785 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2022-05-09 21:55:52.029 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2022-05-09 21:55:52.031 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2022-05-09 21:55:52.038 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2022-05-09 21:55:52.280 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2022-05-09 21:55:52.311 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2022-05-09 21:55:52.312 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2022-05-09 21:55:52.326 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2022-05-09 21:55:52.352 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1a3e5f23
+[DEBUG] 2022-05-09 21:55:52.353 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1a3e5f23
+[DEBUG] 2022-05-09 21:55:52.353 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1a3e5f23
+[DEBUG] 2022-05-09 21:55:52.353 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5c0f79f0
+[DEBUG] 2022-05-09 21:55:52.353 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@29a69a35
+[DEBUG] 2022-05-09 21:55:52.354 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@108bdbd8
+[DEBUG] 2022-05-09 21:55:52.354 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4d48bd85
+[DEBUG] 2022-05-09 21:55:52.354 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4d48bd85
+[DEBUG] 2022-05-09 21:55:52.354 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4d48bd85
+[DEBUG] 2022-05-09 21:55:52.355 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@54aca26f
+[DEBUG] 2022-05-09 21:55:52.356 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@54aca26f
+[DEBUG] 2022-05-09 21:55:52.356 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@54aca26f
+[DEBUG] 2022-05-09 21:55:52.356 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@59532566
+[DEBUG] 2022-05-09 21:55:52.356 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@59532566
+[DEBUG] 2022-05-09 21:55:52.356 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@59532566
+[DEBUG] 2022-05-09 21:55:52.357 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@33cbfa57
+[DEBUG] 2022-05-09 21:55:52.357 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@33cbfa57
+[DEBUG] 2022-05-09 21:55:52.357 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@33cbfa57
+[DEBUG] 2022-05-09 21:55:52.358 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@31c2affc
+[DEBUG] 2022-05-09 21:55:52.358 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@31c2affc
+[DEBUG] 2022-05-09 21:55:52.358 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@31c2affc
+[DEBUG] 2022-05-09 21:55:52.358 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@46866946
+[DEBUG] 2022-05-09 21:55:52.358 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@46866946
+[DEBUG] 2022-05-09 21:55:52.358 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@46866946
+[DEBUG] 2022-05-09 21:55:52.359 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@25b5c5e3
+[DEBUG] 2022-05-09 21:55:52.359 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@25b5c5e3
+[DEBUG] 2022-05-09 21:55:52.359 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@25b5c5e3
+[DEBUG] 2022-05-09 21:55:52.359 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2c708440
+[DEBUG] 2022-05-09 21:55:52.359 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2c708440
+[DEBUG] 2022-05-09 21:55:52.360 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@47547132
+[DEBUG] 2022-05-09 21:55:52.360 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@47547132
+[DEBUG] 2022-05-09 21:55:52.360 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@6f3f0fae
+[DEBUG] 2022-05-09 21:55:52.360 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@6f3f0fae
+[DEBUG] 2022-05-09 21:55:52.361 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7428de63
+[DEBUG] 2022-05-09 21:55:52.361 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@748e9b20
+[DEBUG] 2022-05-09 21:55:52.361 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6a0ac48e
+[DEBUG] 2022-05-09 21:55:52.361 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6a0ac48e
+[DEBUG] 2022-05-09 21:55:52.362 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@38704ff0
+[DEBUG] 2022-05-09 21:55:52.362 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@38704ff0
+[DEBUG] 2022-05-09 21:55:52.369 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@3bead518
+[DEBUG] 2022-05-09 21:55:52.370 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@3bead518
+[DEBUG] 2022-05-09 21:55:52.371 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@345cf395
+[DEBUG] 2022-05-09 21:55:52.371 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@345cf395
+[DEBUG] 2022-05-09 21:55:52.372 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@289fdb08
+[DEBUG] 2022-05-09 21:55:52.372 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@289fdb08
+[DEBUG] 2022-05-09 21:55:52.373 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7ce9e05a
+[DEBUG] 2022-05-09 21:55:52.373 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7ce9e05a
+[DEBUG] 2022-05-09 21:55:52.374 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5136207f
+[DEBUG] 2022-05-09 21:55:52.374 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5136207f
+[DEBUG] 2022-05-09 21:55:52.374 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@290aeb20
+[DEBUG] 2022-05-09 21:55:52.375 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@290aeb20
+[DEBUG] 2022-05-09 21:55:52.376 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1f6d27cc
+[DEBUG] 2022-05-09 21:55:52.376 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1f6d27cc
+[DEBUG] 2022-05-09 21:55:52.377 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@5ff60a8c
+[DEBUG] 2022-05-09 21:55:52.377 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5ff60a8c
+[DEBUG] 2022-05-09 21:55:52.378 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@acf859d
+[DEBUG] 2022-05-09 21:55:52.378 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@acf859d
+[DEBUG] 2022-05-09 21:55:52.379 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@57a48985
+[DEBUG] 2022-05-09 21:55:52.379 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@57a48985
+[DEBUG] 2022-05-09 21:55:52.379 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@57a48985
+[DEBUG] 2022-05-09 21:55:52.380 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@351e414e
+[DEBUG] 2022-05-09 21:55:52.381 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@6c65860d
+[DEBUG] 2022-05-09 21:55:52.381 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6c65860d
+[DEBUG] 2022-05-09 21:55:52.381 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6c65860d
+[DEBUG] 2022-05-09 21:55:52.382 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4d2a1da3
+[DEBUG] 2022-05-09 21:55:52.382 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@7e4d2287
+[DEBUG] 2022-05-09 21:55:52.382 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7e4d2287
+[DEBUG] 2022-05-09 21:55:52.383 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@4682eba5
+[DEBUG] 2022-05-09 21:55:52.384 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4682eba5
+[DEBUG] 2022-05-09 21:55:52.384 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@23811a09
+[DEBUG] 2022-05-09 21:55:52.384 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@23811a09
+[DEBUG] 2022-05-09 21:55:52.384 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@7a7d1b47
+[DEBUG] 2022-05-09 21:55:52.385 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7a7d1b47
+[DEBUG] 2022-05-09 21:55:52.385 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5e2f3be5
+[DEBUG] 2022-05-09 21:55:52.385 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5e2f3be5
+[DEBUG] 2022-05-09 21:55:52.385 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@26a2f7f9
+[DEBUG] 2022-05-09 21:55:52.386 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@56d93692
+[DEBUG] 2022-05-09 21:55:52.386 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@56d93692
+[DEBUG] 2022-05-09 21:55:52.386 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@56d93692
+[DEBUG] 2022-05-09 21:55:52.387 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5c10285a
+[DEBUG] 2022-05-09 21:55:52.387 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5c10285a
+[DEBUG] 2022-05-09 21:55:52.387 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5c10285a
+[DEBUG] 2022-05-09 21:55:52.387 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@3157e4c0
+[DEBUG] 2022-05-09 21:55:52.387 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@7c1812b3
+[DEBUG] 2022-05-09 21:55:52.388 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@67c119b7
+[DEBUG] 2022-05-09 21:55:52.388 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@67c119b7
+[DEBUG] 2022-05-09 21:55:52.388 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@67c119b7
+[DEBUG] 2022-05-09 21:55:52.389 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@53c68ce
+[DEBUG] 2022-05-09 21:55:52.389 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@53c68ce
+[DEBUG] 2022-05-09 21:55:52.389 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@53c68ce
+[DEBUG] 2022-05-09 21:55:52.389 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@3e7545e8
+[DEBUG] 2022-05-09 21:55:52.389 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@23202c31
+[DEBUG] 2022-05-09 21:55:52.390 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@35fb22a9
+[DEBUG] 2022-05-09 21:55:52.390 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@35fb22a9
+[DEBUG] 2022-05-09 21:55:52.391 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@3cae7b8b
+[DEBUG] 2022-05-09 21:55:52.391 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@c6634d
+[DEBUG] 2022-05-09 21:55:52.392 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@c6634d
+[DEBUG] 2022-05-09 21:55:52.392 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@71dfcf21
+[DEBUG] 2022-05-09 21:55:52.393 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@71dfcf21
+[DEBUG] 2022-05-09 21:55:52.394 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@280e8a1a
+[DEBUG] 2022-05-09 21:55:52.394 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@7495699f
+[DEBUG] 2022-05-09 21:55:52.395 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@41b0ae4c
+[DEBUG] 2022-05-09 21:55:52.397 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@ab20d7c
+[DEBUG] 2022-05-09 21:55:52.397 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@ab20d7c
+[DEBUG] 2022-05-09 21:55:52.398 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1b7cae6f
+[DEBUG] 2022-05-09 21:55:52.398 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@21f8e55f
+[DEBUG] 2022-05-09 21:55:52.398 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@d5ce97f
+[DEBUG] 2022-05-09 21:55:52.398 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7048535f
+[DEBUG] 2022-05-09 21:55:52.398 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@e3994ef
+[DEBUG] 2022-05-09 21:55:52.398 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@680d4a6a
+[DEBUG] 2022-05-09 21:55:52.398 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2f04105
+[DEBUG] 2022-05-09 21:55:52.399 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@309028af
+[DEBUG] 2022-05-09 21:55:52.419 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2022-05-09 21:55:52.422 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2022-05-09 21:55:52.423 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2022-05-09 21:55:52.423 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2022-05-09 21:55:52.423 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2022-05-09 21:55:52.424 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2022-05-09 21:55:52.424 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2022-05-09 21:55:52.425 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2022-05-09 21:55:52.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2022-05-09 21:55:52.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2022-05-09 21:55:52.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2022-05-09 21:55:52.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2022-05-09 21:55:52.427 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2022-05-09 21:55:52.427 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2022-05-09 21:55:52.436 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://aa9k253xu276jc.cg2el8onktgs.us-east-2.rds.amazonaws.com:3306/wdev
+[INFO ] 2022-05-09 21:55:52.437 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2022-05-09 21:55:52.437 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2022-05-09 21:55:52.591 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2022-05-09 21:55:54.054 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.28
+      major : 8
+      minor : 0
+[DEBUG] 2022-05-09 21:55:54.059 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.28 (Revision: 7ff2161da3899f379fb3171b6538b191b1c5c7e2)
+      major : 8
+      minor : 0
+[DEBUG] 2022-05-09 21:55:54.060 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2022-05-09 21:55:54.078 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2022-05-09 21:55:54.089 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2022-05-09 21:55:54.170 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2022-05-09 21:55:54.305 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2022-05-09 21:55:54.313 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@30b131b2] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@2924f1d8]
+[DEBUG] 2022-05-09 21:55:54.363 [main] AnnotationBinder - Binding entity from annotated class: com.palmerlarson.entity.User
+[DEBUG] 2022-05-09 21:55:54.376 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2022-05-09 21:55:54.378 [main] EntityBinder - Import with entity name User
+[DEBUG] 2022-05-09 21:55:54.380 [main] EntityBinder - Bind entity com.palmerlarson.entity.User on table user
+[DEBUG] 2022-05-09 21:55:54.408 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.410 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2022-05-09 21:55:54.411 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:id]
+[DEBUG] 2022-05-09 21:55:54.413 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2022-05-09 21:55:54.414 [main] PropertyBinder - Building property id
+[DEBUG] 2022-05-09 21:55:54.417 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2022-05-09 21:55:54.418 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.418 [main] PropertyBinder - MetadataSourceProcessor property first_name with lazy=false
+[DEBUG] 2022-05-09 21:55:54.418 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:first_name]
+[DEBUG] 2022-05-09 21:55:54.418 [main] SimpleValueBinder - building SimpleValue for first_name
+[DEBUG] 2022-05-09 21:55:54.418 [main] PropertyBinder - Building property first_name
+[DEBUG] 2022-05-09 21:55:54.418 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=gross_income, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.418 [main] PropertyBinder - MetadataSourceProcessor property gross_income with lazy=false
+[DEBUG] 2022-05-09 21:55:54.419 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:gross_income]
+[DEBUG] 2022-05-09 21:55:54.419 [main] SimpleValueBinder - building SimpleValue for gross_income
+[DEBUG] 2022-05-09 21:55:54.419 [main] PropertyBinder - Building property gross_income
+[DEBUG] 2022-05-09 21:55:54.419 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.419 [main] PropertyBinder - MetadataSourceProcessor property last_name with lazy=false
+[DEBUG] 2022-05-09 21:55:54.419 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:last_name]
+[DEBUG] 2022-05-09 21:55:54.419 [main] SimpleValueBinder - building SimpleValue for last_name
+[DEBUG] 2022-05-09 21:55:54.419 [main] PropertyBinder - Building property last_name
+[DEBUG] 2022-05-09 21:55:54.420 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='id', referencedColumn='user_id', mappedBy=''}
+[DEBUG] 2022-05-09 21:55:54.422 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=tool, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.426 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=userName, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.427 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2022-05-09 21:55:54.428 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:userName]
+[DEBUG] 2022-05-09 21:55:54.428 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2022-05-09 21:55:54.428 [main] PropertyBinder - Building property userName
+[DEBUG] 2022-05-09 21:55:54.429 [main] AnnotationBinder - Binding entity from annotated class: com.palmerlarson.entity.Tool
+[DEBUG] 2022-05-09 21:55:54.430 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2022-05-09 21:55:54.430 [main] EntityBinder - Import with entity name Tool
+[DEBUG] 2022-05-09 21:55:54.431 [main] EntityBinder - Bind entity com.palmerlarson.entity.Tool on table tool
+[DEBUG] 2022-05-09 21:55:54.436 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tool), mappingColumn=tool_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.437 [main] PropertyBinder - MetadataSourceProcessor property tool_id with lazy=false
+[DEBUG] 2022-05-09 21:55:54.437 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.Tool:tool_id]
+[DEBUG] 2022-05-09 21:55:54.437 [main] SimpleValueBinder - building SimpleValue for tool_id
+[DEBUG] 2022-05-09 21:55:54.437 [main] PropertyBinder - Building property tool_id
+[DEBUG] 2022-05-09 21:55:54.437 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(tool_id)]), tool_id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2022-05-09 21:55:54.438 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tool), mappingColumn=negative_asset, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.438 [main] PropertyBinder - MetadataSourceProcessor property negative_asset with lazy=false
+[DEBUG] 2022-05-09 21:55:54.438 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.Tool:negative_asset]
+[DEBUG] 2022-05-09 21:55:54.438 [main] SimpleValueBinder - building SimpleValue for negative_asset
+[DEBUG] 2022-05-09 21:55:54.438 [main] PropertyBinder - Building property negative_asset
+[DEBUG] 2022-05-09 21:55:54.438 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tool), mappingColumn=positive_asset, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.438 [main] PropertyBinder - MetadataSourceProcessor property positive_asset with lazy=false
+[DEBUG] 2022-05-09 21:55:54.439 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.Tool:positive_asset]
+[DEBUG] 2022-05-09 21:55:54.439 [main] SimpleValueBinder - building SimpleValue for positive_asset
+[DEBUG] 2022-05-09 21:55:54.439 [main] PropertyBinder - Building property positive_asset
+[DEBUG] 2022-05-09 21:55:54.439 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2022-05-09 21:55:54.439 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tool), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-09 21:55:54.440 [main] PropertyBinder - Building property user_id
+[DEBUG] 2022-05-09 21:55:54.442 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2022-05-09 21:55:54.443 [main] SimpleValueBinder - Starting fillSimpleValue for first_name
+[DEBUG] 2022-05-09 21:55:54.443 [main] SimpleValueBinder - Starting fillSimpleValue for gross_income
+[DEBUG] 2022-05-09 21:55:54.443 [main] SimpleValueBinder - Starting fillSimpleValue for last_name
+[DEBUG] 2022-05-09 21:55:54.443 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2022-05-09 21:55:54.443 [main] SimpleValueBinder - Starting fillSimpleValue for tool_id
+[DEBUG] 2022-05-09 21:55:54.443 [main] SimpleValueBinder - Starting fillSimpleValue for negative_asset
+[DEBUG] 2022-05-09 21:55:54.443 [main] SimpleValueBinder - Starting fillSimpleValue for positive_asset
+[DEBUG] 2022-05-09 21:55:54.445 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2022-05-09 21:55:54.447 [main] PrimaryKey - Forcing column [tool_id] to be non-null as it is part of the primary key for table [tool]
+[DEBUG] 2022-05-09 21:55:54.448 [main] PropertyBinder - Building property tool
+[DEBUG] 2022-05-09 21:55:54.448 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.palmerlarson.entity.User
+[DEBUG] 2022-05-09 21:55:54.450 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.palmerlarson.entity.User
+[DEBUG] 2022-05-09 21:55:54.474 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - SessionFactory name : null
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Statistics: disabled
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2022-05-09 21:55:54.475 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Default null ordering: NONE
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Query language substitutions: {}
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Named query checking : enabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Second-level cache: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - JDBC batch size: 15
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2022-05-09 21:55:54.476 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2022-05-09 21:55:54.477 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2022-05-09 21:55:54.477 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2022-05-09 21:55:54.477 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2022-05-09 21:55:54.477 [main] Settings - JPA compliance - query : 
+[DEBUG] 2022-05-09 21:55:54.477 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2022-05-09 21:55:54.477 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2022-05-09 21:55:54.477 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2022-05-09 21:55:54.511 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2022-05-09 21:55:54.527 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2022-05-09 21:55:54.528 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/palmerlarson/IdeaProjects/IndieProject/target/test-classes:/Users/palmerlarson/IdeaProjects/IndieProject/target/classes:/Users/palmerlarson/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/palmerlarson/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/palmerlarson/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/palmerlarson/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/palmerlarson/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/palmerlarson/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/palmerlarson/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/palmerlarson/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/palmerlarson/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/palmerlarson/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/palmerlarson/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/palmerlarson/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/palmerlarson/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/palmerlarson/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/palmerlarson/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/palmerlarson/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/palmerlarson/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/palmerlarson/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/palmerlarson/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/palmerlarson/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/Users/palmerlarson/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/palmerlarson/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/palmerlarson/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/palmerlarson/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/palmerlarson/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/palmerlarson/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/palmerlarson/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar:/Users/palmerlarson/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/palmerlarson/.m2/repository/com/auth0/java-jwt/3.18.3/java-jwt-3.18.3.jar:/Users/palmerlarson/.m2/repository/org/json/json/20170516/json-20170516.jar:/Users/palmerlarson/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar:/Users/palmerlarson/.m2/repository/commons-codec/commons-codec/1.7/commons-codec-1.7.jar:/Users/palmerlarson/.m2/repository/org/jfree/jfreechart/1.5.3/jfreechart-1.5.3.jar:/Users/palmerlarson/Library/Application Support/JetBrains/IntelliJIdea2021.3/javascript/extLibs/http_kit.fontawesome.com_ae280f9e8b.js:/Users/palmerlarson/Library/Application Support/JetBrains/IntelliJIdea2021.3/javascript/extLibs/http_unpkg.com_flowbite@1.4.4_dist_flowbite.js, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.palmerlarson.persistence.ToolDaoTest,getAllSuccess, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/palmerlarson, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2022-01-18, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, connection.password=palmer1995, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.14+8-LTS-263, user.name=palmerlarson, path.separator=:, hibernate.connection.username=****, os.version=12.3.1, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://aa9k253xu276jc.cg2el8onktgs.us-east-2.rds.amazonaws.com:3306/wdev, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/7_/hjc2wkns2zj3yl0np9mvr3cm0000gn/T/, java.version=11.0.14, user.dir=/Users/palmerlarson/IdeaProjects/IndieProject, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@39ffda4a, java.library.path=/Users/palmerlarson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.14+8-LTS-263, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://aa9k253xu276jc.cg2el8onktgs.us-east-2.rds.amazonaws.com:3306/wdev, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2022-05-09 21:55:54.541 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2022-05-09 21:55:54.541 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2022-05-09 21:55:54.542 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2022-05-09 21:55:54.543 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@30b131b2] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@fb49fdf]
+[DEBUG] 2022-05-09 21:55:54.574 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.Tool] is safe
+[DEBUG] 2022-05-09 21:55:54.575 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.Tool
+[DEBUG] 2022-05-09 21:55:54.587 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.Tool] is safe
+[DEBUG] 2022-05-09 21:55:54.588 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.Tool
+[DEBUG] 2022-05-09 21:55:54.753 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.User] is safe
+[DEBUG] 2022-05-09 21:55:54.754 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.User
+[DEBUG] 2022-05-09 21:55:54.754 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.User] is safe
+[DEBUG] 2022-05-09 21:55:54.754 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.User
+[DEBUG] 2022-05-09 21:55:54.810 [main] AbstractEntityPersister - Static SQL for entity: com.palmerlarson.entity.Tool
+[DEBUG] 2022-05-09 21:55:54.811 [main] AbstractEntityPersister -  Version select: select tool_id from tool where tool_id =?
+[DEBUG] 2022-05-09 21:55:54.811 [main] AbstractEntityPersister -  Snapshot select: select tool_.tool_id, tool_.negative_asset as negative2_0_, tool_.positive_asset as positive3_0_, tool_.user_id as user_id4_0_ from tool tool_ where tool_.tool_id=?
+[DEBUG] 2022-05-09 21:55:54.811 [main] AbstractEntityPersister -  Insert 0: insert into tool (negative_asset, positive_asset, user_id, tool_id) values (?, ?, ?, ?)
+[DEBUG] 2022-05-09 21:55:54.811 [main] AbstractEntityPersister -  Update 0: update tool set negative_asset=?, positive_asset=?, user_id=? where tool_id=?
+[DEBUG] 2022-05-09 21:55:54.811 [main] AbstractEntityPersister -  Delete 0: delete from tool where tool_id=?
+[DEBUG] 2022-05-09 21:55:54.811 [main] AbstractEntityPersister -  Identity insert: insert into tool (negative_asset, positive_asset, user_id) values (?, ?, ?)
+[DEBUG] 2022-05-09 21:55:54.824 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6b415f5f]
+[DEBUG] 2022-05-09 21:55:54.825 [main] MetamodelGraphWalker - Visiting attribute path : negative_asset
+[DEBUG] 2022-05-09 21:55:54.825 [main] MetamodelGraphWalker - Visiting attribute path : positive_asset
+[DEBUG] 2022-05-09 21:55:54.825 [main] MetamodelGraphWalker - Visiting attribute path : user_id
+[DEBUG] 2022-05-09 21:55:54.826 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5729b410]
+[DEBUG] 2022-05-09 21:55:54.827 [main] MetamodelGraphWalker - Visiting attribute path : user_id.first_name
+[DEBUG] 2022-05-09 21:55:54.827 [main] MetamodelGraphWalker - Visiting attribute path : user_id.gross_income
+[DEBUG] 2022-05-09 21:55:54.827 [main] MetamodelGraphWalker - Visiting attribute path : user_id.last_name
+[DEBUG] 2022-05-09 21:55:54.827 [main] MetamodelGraphWalker - Visiting attribute path : user_id.userName
+[DEBUG] 2022-05-09 21:55:54.827 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool
+[DEBUG] 2022-05-09 21:55:54.827 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6467ddc7]
+[DEBUG] 2022-05-09 21:55:54.828 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.negative_asset
+[DEBUG] 2022-05-09 21:55:54.828 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.positive_asset
+[DEBUG] 2022-05-09 21:55:54.828 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.user_id
+[DEBUG] 2022-05-09 21:55:54.828 [main] MetamodelGraphWalker - Property path deemed to be circular : user_id.tool.user_id
+[DEBUG] 2022-05-09 21:55:54.828 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-05-09 21:55:54.835 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-05-09 21:55:54.840 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.Tool)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.Tool, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.Tool)
+          - EntityAttributeFetchImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:1>, path=com.palmerlarson.entity.Tool.user_id)
+             - EntityAttributeFetchImpl(entity=com.palmerlarson.entity.Tool, querySpaceUid=<gen:2>, path=com.palmerlarson.entity.Tool.user_id.tool)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.Tool)
+          - SQL table alias mapping - tool0_
+          - alias suffix - 0_
+          - suffixed key columns - {tool_id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user_id)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.palmerlarson.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(tool)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.palmerlarson.entity.Tool)
+                      - SQL table alias mapping - tool2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {tool_id1_0_2_}
+
+[DEBUG] 2022-05-09 21:55:54.841 [main] EntityLoader - Static select for entity com.palmerlarson.entity.Tool [NONE]: select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_, user1_.id as id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.gross_income as gross_in3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.userName as userName5_1_1_, tool2_.tool_id as tool_id1_0_2_, tool2_.negative_asset as negative2_0_2_, tool2_.positive_asset as positive3_0_2_, tool2_.user_id as user_id4_0_2_ from tool tool0_ left outer join user user1_ on tool0_.user_id=user1_.id left outer join tool tool2_ on user1_.id=tool2_.tool_id where tool0_.tool_id=?
+[DEBUG] 2022-05-09 21:55:54.845 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46a795de]
+[DEBUG] 2022-05-09 21:55:54.845 [main] MetamodelGraphWalker - Visiting attribute path : negative_asset
+[DEBUG] 2022-05-09 21:55:54.845 [main] MetamodelGraphWalker - Visiting attribute path : positive_asset
+[DEBUG] 2022-05-09 21:55:54.845 [main] MetamodelGraphWalker - Visiting attribute path : user_id
+[DEBUG] 2022-05-09 21:55:54.845 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2f3928ac]
+[DEBUG] 2022-05-09 21:55:54.845 [main] MetamodelGraphWalker - Visiting attribute path : user_id.first_name
+[DEBUG] 2022-05-09 21:55:54.845 [main] MetamodelGraphWalker - Visiting attribute path : user_id.gross_income
+[DEBUG] 2022-05-09 21:55:54.845 [main] MetamodelGraphWalker - Visiting attribute path : user_id.last_name
+[DEBUG] 2022-05-09 21:55:54.845 [main] MetamodelGraphWalker - Visiting attribute path : user_id.userName
+[DEBUG] 2022-05-09 21:55:54.846 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool
+[DEBUG] 2022-05-09 21:55:54.846 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@31834a2b]
+[DEBUG] 2022-05-09 21:55:54.846 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.negative_asset
+[DEBUG] 2022-05-09 21:55:54.846 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.positive_asset
+[DEBUG] 2022-05-09 21:55:54.846 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.user_id
+[DEBUG] 2022-05-09 21:55:54.846 [main] MetamodelGraphWalker - Property path deemed to be circular : user_id.tool.user_id
+[DEBUG] 2022-05-09 21:55:54.846 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-05-09 21:55:54.846 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-05-09 21:55:54.846 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.Tool)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.Tool, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.Tool)
+          - EntityAttributeFetchImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:1>, path=com.palmerlarson.entity.Tool.user_id)
+             - EntityAttributeFetchImpl(entity=com.palmerlarson.entity.Tool, querySpaceUid=<gen:2>, path=com.palmerlarson.entity.Tool.user_id.tool)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.Tool)
+          - SQL table alias mapping - tool0_
+          - alias suffix - 0_
+          - suffixed key columns - {tool_id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user_id)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.palmerlarson.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(tool)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.palmerlarson.entity.Tool)
+                      - SQL table alias mapping - tool2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {tool_id1_0_2_}
+
+[DEBUG] 2022-05-09 21:55:54.846 [main] EntityLoader - Static select for entity com.palmerlarson.entity.Tool [READ]: select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_, user1_.id as id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.gross_income as gross_in3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.userName as userName5_1_1_, tool2_.tool_id as tool_id1_0_2_, tool2_.negative_asset as negative2_0_2_, tool2_.positive_asset as positive3_0_2_, tool2_.user_id as user_id4_0_2_ from tool tool0_ left outer join user user1_ on tool0_.user_id=user1_.id left outer join tool tool2_ on user1_.id=tool2_.tool_id where tool0_.tool_id=?
+[DEBUG] 2022-05-09 21:55:54.853 [main] Loader - Static select for action ACTION_MERGE on entity com.palmerlarson.entity.Tool: select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_ from tool tool0_ where tool0_.tool_id=?
+[DEBUG] 2022-05-09 21:55:54.854 [main] Loader - Static select for action ACTION_REFRESH on entity com.palmerlarson.entity.Tool: select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_ from tool tool0_ where tool0_.tool_id=?
+[DEBUG] 2022-05-09 21:55:54.854 [main] AbstractEntityPersister - Static SQL for entity: com.palmerlarson.entity.User
+[DEBUG] 2022-05-09 21:55:54.854 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2022-05-09 21:55:54.854 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.first_name as first_na2_1_, user_.gross_income as gross_in3_1_, user_.last_name as last_nam4_1_, user_.userName as userName5_1_ from user user_ where user_.id=?
+[DEBUG] 2022-05-09 21:55:54.854 [main] AbstractEntityPersister -  Insert 0: insert into user (first_name, gross_income, last_name, userName, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2022-05-09 21:55:54.854 [main] AbstractEntityPersister -  Update 0: update user set first_name=?, gross_income=?, last_name=?, userName=? where id=?
+[DEBUG] 2022-05-09 21:55:54.854 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2022-05-09 21:55:54.854 [main] AbstractEntityPersister -  Identity insert: insert into user (first_name, gross_income, last_name, userName) values (?, ?, ?, ?)
+[DEBUG] 2022-05-09 21:55:54.854 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a9ec80e]
+[DEBUG] 2022-05-09 21:55:54.854 [main] MetamodelGraphWalker - Visiting attribute path : first_name
+[DEBUG] 2022-05-09 21:55:54.855 [main] MetamodelGraphWalker - Visiting attribute path : gross_income
+[DEBUG] 2022-05-09 21:55:54.855 [main] MetamodelGraphWalker - Visiting attribute path : last_name
+[DEBUG] 2022-05-09 21:55:54.855 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2022-05-09 21:55:54.855 [main] MetamodelGraphWalker - Visiting attribute path : tool
+[DEBUG] 2022-05-09 21:55:54.855 [main] MetamodelGraphWalker - Property path deemed to be circular : tool
+[DEBUG] 2022-05-09 21:55:54.855 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-05-09 21:55:54.855 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-05-09 21:55:54.855 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2022-05-09 21:55:54.855 [main] EntityLoader - Static select for entity com.palmerlarson.entity.User [NONE]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-09 21:55:54.856 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f6b53ed]
+[DEBUG] 2022-05-09 21:55:54.856 [main] MetamodelGraphWalker - Visiting attribute path : first_name
+[DEBUG] 2022-05-09 21:55:54.856 [main] MetamodelGraphWalker - Visiting attribute path : gross_income
+[DEBUG] 2022-05-09 21:55:54.856 [main] MetamodelGraphWalker - Visiting attribute path : last_name
+[DEBUG] 2022-05-09 21:55:54.856 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2022-05-09 21:55:54.856 [main] MetamodelGraphWalker - Visiting attribute path : tool
+[DEBUG] 2022-05-09 21:55:54.856 [main] MetamodelGraphWalker - Property path deemed to be circular : tool
+[DEBUG] 2022-05-09 21:55:54.856 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-05-09 21:55:54.856 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-05-09 21:55:54.856 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2022-05-09 21:55:54.856 [main] EntityLoader - Static select for entity com.palmerlarson.entity.User [READ]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-09 21:55:54.856 [main] Loader - Static select for action ACTION_MERGE on entity com.palmerlarson.entity.User: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-09 21:55:54.856 [main] Loader - Static select for action ACTION_REFRESH on entity com.palmerlarson.entity.User: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-09 21:55:54.879 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2022-05-09 21:55:54.879 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2022-05-09 21:55:54.881 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2022-05-09 21:55:54.888 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-05-09 21:55:54.889 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2022-05-09 21:55:54.891 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2022-05-09 21:55:54.891 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2022-05-09 21:55:54.894 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6a2d867d
+[DEBUG] 2022-05-09 21:55:54.895 [main] SessionFactoryRegistry - Registering SessionFactory: 8fbed76e-b0f1-434b-a5a8-c9cc3dea1a28 (<unnamed>)
+[DEBUG] 2022-05-09 21:55:54.895 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2022-05-09 21:55:54.952 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2022-05-09 21:55:54.971 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Tool as generatedAlias0
+[DEBUG] 2022-05-09 21:55:54.981 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@c48b543
+[DEBUG] 2022-05-09 21:55:55.003 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.palmerlarson.entity.Tool as generatedAlias0
+[DEBUG] 2022-05-09 21:55:55.013 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2022-05-09 21:55:55.025 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'palmerlarson'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'Tool'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2022-05-09 21:55:55.039 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2022-05-09 21:55:55.049 [main] FromElement - FromClause{level=1} : com.palmerlarson.entity.Tool (generatedAlias0) -> tool0_
+[DEBUG] 2022-05-09 21:55:55.050 [main] FromReferenceNode - Resolved : generatedAlias0 -> tool0_.tool_id
+[DEBUG] 2022-05-09 21:55:55.050 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2022-05-09 21:55:55.051 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} tool0_.tool_id ) ( FromClause{level=1} tool tool0_ ) )
+[DEBUG] 2022-05-09 21:55:55.055 [main] JoinProcessor - Using FROM fragment [tool tool0_]
+[DEBUG] 2022-05-09 21:55:55.055 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2022-05-09 21:55:55.056 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (tool)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'tool0_.tool_id as tool_id1_0_' {alias=generatedAlias0, className=com.palmerlarson.entity.Tool, tableAlias=tool0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'tool0_.negative_asset as negative2_0_, tool0_.positive_asset as positive3_0_, tool0_.user_id as user_id4_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[tool0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'tool tool0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=tool,tableAlias=tool0_,origin=null,columns={,className=com.palmerlarson.entity.Tool}}
+
+[DEBUG] 2022-05-09 21:55:55.056 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2022-05-09 21:55:55.059 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.palmerlarson.entity.Tool as generatedAlias0
+[DEBUG] 2022-05-09 21:55:55.059 [main] QueryTranslatorImpl - SQL: select tool0_.tool_id as tool_id1_0_, tool0_.negative_asset as negative2_0_, tool0_.positive_asset as positive3_0_, tool0_.user_id as user_id4_0_ from tool tool0_
+[DEBUG] 2022-05-09 21:55:55.059 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2022-05-09 21:55:55.070 [main] SQL - select tool0_.tool_id as tool_id1_0_, tool0_.negative_asset as negative2_0_, tool0_.positive_asset as positive3_0_, tool0_.user_id as user_id4_0_ from tool tool0_
+[DEBUG] 2022-05-09 21:55:55.186 [main] Loader - Result set row: 0
+[DEBUG] 2022-05-09 21:55:55.192 [main] Loader - Result row: EntityKey[com.palmerlarson.entity.Tool#5]
+[DEBUG] 2022-05-09 21:55:55.197 [main] Loader - Result set row: 1
+[DEBUG] 2022-05-09 21:55:55.198 [main] Loader - Result row: EntityKey[com.palmerlarson.entity.Tool#6]
+[DEBUG] 2022-05-09 21:55:55.199 [main] Loader - Result set row: 2
+[DEBUG] 2022-05-09 21:55:55.199 [main] Loader - Result row: EntityKey[com.palmerlarson.entity.Tool#7]
+[DEBUG] 2022-05-09 21:55:55.200 [main] Loader - Result set row: 3
+[DEBUG] 2022-05-09 21:55:55.200 [main] Loader - Result row: EntityKey[com.palmerlarson.entity.Tool#8]
+[DEBUG] 2022-05-09 21:55:55.201 [main] TwoPhaseLoad - Resolving attributes for [com.palmerlarson.entity.Tool#5]
+[DEBUG] 2022-05-09 21:55:55.201 [main] TwoPhaseLoad - Processing attribute `negative_asset` : value = 3
+[DEBUG] 2022-05-09 21:55:55.202 [main] TwoPhaseLoad - Attribute (`negative_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.203 [main] TwoPhaseLoad - Processing attribute `positive_asset` : value = 10
+[DEBUG] 2022-05-09 21:55:55.203 [main] TwoPhaseLoad - Attribute (`positive_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.203 [main] TwoPhaseLoad - Processing attribute `user_id` : value = 2
+[DEBUG] 2022-05-09 21:55:55.203 [main] TwoPhaseLoad - Attribute (`user_id`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.205 [main] SQL - select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-09 21:55:55.258 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2022-05-09 21:55:55.258 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Resolving attributes for [com.palmerlarson.entity.User#2]
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Processing attribute `first_name` : value = Herbert
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Attribute (`first_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Processing attribute `gross_income` : value = 65000
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Attribute (`gross_income`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Processing attribute `last_name` : value = Schilt
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Attribute (`last_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Processing attribute `userName` : value = herbert
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Processing attribute `tool` : value = 2
+[DEBUG] 2022-05-09 21:55:55.263 [main] TwoPhaseLoad - Attribute (`tool`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.264 [main] SQL - select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_, user1_.id as id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.gross_income as gross_in3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.userName as userName5_1_1_, tool2_.tool_id as tool_id1_0_2_, tool2_.negative_asset as negative2_0_2_, tool2_.positive_asset as positive3_0_2_, tool2_.user_id as user_id4_0_2_ from tool tool0_ left outer join user user1_ on tool0_.user_id=user1_.id left outer join tool tool2_ on user1_.id=tool2_.tool_id where tool0_.tool_id=?
+[DEBUG] 2022-05-09 21:55:55.315 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2022-05-09 21:55:55.316 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.palmerlarson.entity.Tool#2
+[DEBUG] 2022-05-09 21:55:55.318 [main] TwoPhaseLoad - Done materializing entity [com.palmerlarson.entity.User#2]
+[DEBUG] 2022-05-09 21:55:55.318 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2022-05-09 21:55:55.319 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.palmerlarson.entity.User#2
+[DEBUG] 2022-05-09 21:55:55.319 [main] TwoPhaseLoad - Done materializing entity [com.palmerlarson.entity.Tool#5]
+[DEBUG] 2022-05-09 21:55:55.319 [main] TwoPhaseLoad - Resolving attributes for [com.palmerlarson.entity.Tool#6]
+[DEBUG] 2022-05-09 21:55:55.319 [main] TwoPhaseLoad - Processing attribute `negative_asset` : value = 3
+[DEBUG] 2022-05-09 21:55:55.319 [main] TwoPhaseLoad - Attribute (`negative_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.319 [main] TwoPhaseLoad - Processing attribute `positive_asset` : value = 10
+[DEBUG] 2022-05-09 21:55:55.319 [main] TwoPhaseLoad - Attribute (`positive_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.319 [main] TwoPhaseLoad - Processing attribute `user_id` : value = 2
+[DEBUG] 2022-05-09 21:55:55.319 [main] TwoPhaseLoad - Attribute (`user_id`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.320 [main] TwoPhaseLoad - Done materializing entity [com.palmerlarson.entity.Tool#6]
+[DEBUG] 2022-05-09 21:55:55.320 [main] TwoPhaseLoad - Resolving attributes for [com.palmerlarson.entity.Tool#7]
+[DEBUG] 2022-05-09 21:55:55.320 [main] TwoPhaseLoad - Processing attribute `negative_asset` : value = 3
+[DEBUG] 2022-05-09 21:55:55.320 [main] TwoPhaseLoad - Attribute (`negative_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.320 [main] TwoPhaseLoad - Processing attribute `positive_asset` : value = 10
+[DEBUG] 2022-05-09 21:55:55.320 [main] TwoPhaseLoad - Attribute (`positive_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Processing attribute `user_id` : value = 2
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Attribute (`user_id`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Done materializing entity [com.palmerlarson.entity.Tool#7]
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Resolving attributes for [com.palmerlarson.entity.Tool#8]
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Processing attribute `negative_asset` : value = 3
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Attribute (`negative_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Processing attribute `positive_asset` : value = 10
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Attribute (`positive_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Processing attribute `user_id` : value = 2
+[DEBUG] 2022-05-09 21:55:55.321 [main] TwoPhaseLoad - Attribute (`user_id`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-09 21:55:55.322 [main] TwoPhaseLoad - Done materializing entity [com.palmerlarson.entity.Tool#8]
+[DEBUG] 2022-05-09 21:55:55.323 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

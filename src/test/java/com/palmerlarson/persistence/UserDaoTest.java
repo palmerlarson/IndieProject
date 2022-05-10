@@ -1,10 +1,7 @@
 package com.palmerlarson.persistence;
 
 import com.palmerlarson.entity.User;
-
 import com.palmerlarson.testUtils.Database;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -74,7 +71,8 @@ public class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(1));
+        User retrieveUser = dao.getById(1);
+        dao.delete(retrieveUser);
         assertNull(dao.getById(1));
     }
 
