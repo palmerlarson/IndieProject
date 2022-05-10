@@ -60,3 +60,16 @@ const submit = () => {
     }
     xhr.send(JSON.stringify(worth));
 }
+
+const save = () => {
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "graphs", true);
+    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.onreadystatechange = () => {
+        if(xhr.readyState === 4) {
+            console.log("saved");
+            console.log(xhr.response);
+        }
+    }
+    xhr.send(JSON.stringify(worth));
+}

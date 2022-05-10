@@ -38,7 +38,7 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         String lastName = req.getParameter("lName");
         int grossIncome = Integer.parseInt(req.getParameter("income"));
         System.out.println(firstName + lastName + grossIncome);
-        HttpSession session=req.getSession(true);
+        HttpSession session=req.getSession(false);
         User uObj = (User)session.getAttribute("currentUser");
         String uName = uObj.getUserName();
 
@@ -72,12 +72,14 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
     public static void pullName(HttpServletRequest req, HttpServletResponse resp, Logger logger) {
         try {
             resp.setContentType("text/html");
-            HttpSession session=req.getSession(true);
+            HttpSession session=req.getSession(false);
             User uObj = (User)session.getAttribute("currentUser");
             String uName = uObj.getUserName();
             String fName = uObj.getFirst_name();
             String lName = uObj.getLast_name();
             int income = uObj.getGross_income();
+            int monthlyIncome = income / 12;
+            req.setAttribute("mIncome", monthlyIncome);
             req.setAttribute("userName", uName);
             req.setAttribute("fName", fName);
             req.setAttribute("lName", lName);

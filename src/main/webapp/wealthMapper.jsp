@@ -8,7 +8,7 @@
     <div class="w-2/4 ml-20 mr-2 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl">
         <h4 class="text-lg font-bold">Monthly Income/Debt</h4>
         <c:choose>
-            <c:when test="${empty mIncome}">
+            <c:when test="${mIncome} <= 0">
                 <a href="infoPage">Add your income here</a>
             </c:when>
             <c:otherwise>
@@ -36,6 +36,7 @@
         </form>
         <br>
         <button class="rounded border border-gray-400 bg-green-400 py-2 px-4 font-semibold text-gray-800 shadow hover:bg-green-500" type="button" onclick="submit()">Submit</button>
+        <button class="rounded border border-gray-400 bg-white py-2 px-4 font-semibold text-gray-800 shadow hover:bg-gray-100 mt-2" type="button" onclick="save()">Save Config</button>
     </div>
 
     <div class="output w-2/4 mr-20 ml-2 rounded-xl bg-orange-50 py-2 text-center drop-shadow-2xl z-10">
@@ -50,7 +51,6 @@
                 </c:otherwise>
             </c:choose>
         </ul>
-        <button class="rounded border border-gray-400 bg-white py-2 px-4 font-semibold text-gray-800 shadow hover:bg-gray-100 mt-2" type="submit" value="submit" name="save">Save Config</button>
     </div>
 </div>
 

@@ -97,9 +97,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
                 email = validate(tokenResponse)[1];
                 req.setAttribute("userName", userName);
                 req.setAttribute("email", email);
-                if (dao.getByUserName(userName) == null) {
-                    addToDatabase(req, userName);
-                }
+                addToDatabase(req, userName);
                 logger.debug(userName);
                 logger.debug(email);
             } catch (IOException e) {

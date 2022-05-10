@@ -5,6 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-<img class="imger" src="images/GraphCharts/barChart.png" alt="chart">
+
 </body>
 </html>
