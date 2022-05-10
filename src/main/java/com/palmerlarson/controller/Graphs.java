@@ -34,6 +34,7 @@ public class Graphs extends HttpServlet {
 
 
 
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/graphs.jsp");
         dispatcher.forward(req, resp);
     }

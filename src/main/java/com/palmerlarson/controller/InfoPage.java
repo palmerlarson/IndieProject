@@ -22,7 +22,6 @@ import java.io.PrintWriter;
 public class InfoPage extends HttpServlet implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    public boolean isFullySetup = false;
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -37,42 +36,30 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         String firstName = req.getParameter("fName");
         String lastName = req.getParameter("lName");
         int grossIncome = Integer.parseInt(req.getParameter("income"));
-        System.out.println(firstName + lastName + grossIncome);
-        HttpSession session=req.getSession(false);
+        HttpSession session=req.getSession(true);
         User uObj = (User)session.getAttribute("currentUser");
-        String uName = uObj.getUserName();
+        UserDao dao = new UserDao();
 
+        if (firstName != null && lastName != null && grossIncome != 0) {
+            uObj.setFirst_name(firstName);
+            uObj.setLast_name(lastName);
+            uObj.setGross_income(grossIncome);
+            dao.saveOrUpdate(uObj);
+        }
 
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        out.println("<h1>Your profile has been fully setup!</h1>");
-        out.println("<p>Username:" + "holder" + "</p>");
-        out.println("<p>Name:" + firstName + " " + lastName + "</p>");
-        out.println("<p>Email: " + "holder" + "</p>");
-        out.println("<p>Income: " + grossIncome + "</p>");
+        out.print("<h5>Your profile has been updated</h5>");
 
-
-        if (!isFullySetup) {
-            addToDatabase(firstName, lastName, uName, grossIncome);
-            isFullySetup = true;
-        } else {
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
-            dispatcher.forward(req, resp);
-        }
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage.jsp");
+        dispatcher.forward(req, resp);
     }
 
-    public void addToDatabase(String firstName, String lastName, String userEmail, int income) {
-        UserDao dao = new UserDao();
-        User newUser = new User(firstName, lastName, userEmail, income);
-        dao.insert(newUser);
-        logger.error("TEST DID THIS WORK?");
-
-    }
 
     public static void pullName(HttpServletRequest req, HttpServletResponse resp, Logger logger) {
         try {
             resp.setContentType("text/html");
-            HttpSession session=req.getSession(false);
+            HttpSession session=req.getSession(true);
             User uObj = (User)session.getAttribute("currentUser");
             String uName = uObj.getUserName();
             String fName = uObj.getFirst_name();
