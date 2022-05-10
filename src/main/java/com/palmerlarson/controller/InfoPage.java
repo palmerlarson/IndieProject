@@ -1,12 +1,10 @@
 package com.palmerlarson.controller;
 
-import com.palmerlarson.auth.CognitoJWTParser;
 import com.palmerlarson.entity.User;
 import com.palmerlarson.persistence.UserDao;
 import com.palmerlarson.util.PropertiesLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.palmerlarson.auth.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,7 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Properties;
 
 @WebServlet(
         urlPatterns = {"/infoPage"}
@@ -41,6 +38,9 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         String lastName = req.getParameter("lName");
         int grossIncome = Integer.parseInt(req.getParameter("income"));
         System.out.println(firstName + lastName + grossIncome);
+        HttpSession session=req.getSession(true);
+        User uObj = (User)session.getAttribute("currentUser");
+        String uName = uObj.getUserName();
 
 
         resp.setContentType("text/html");
@@ -53,7 +53,7 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
 
 
         if (!isFullySetup) {
-            addToDatabase(firstName, lastName, "test", grossIncome);
+            addToDatabase(firstName, lastName, uName, grossIncome);
             isFullySetup = true;
         } else {
             RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
