@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.Objects;
 
 @WebServlet(
         urlPatterns = {"/wealthMapper"}
@@ -45,25 +46,39 @@ public class WealthMapper extends HttpServlet {
 //        out.print(arr);
         try (OutputStream out = resp.getOutputStream()) {
             DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-            DefaultPieDataset pieSet = new DefaultPieDataset();
-
+            DefaultPieDataset<String> pieSet = new DefaultPieDataset<>();
+            int totalDebt = 0;
+            int totalWealth = 0;
             for (int i = 0; i < arr.length(); i++) {
                 JSONObject obj = arr.getJSONObject(i);
                 String name = obj.getString("name");
                 String type = obj.getString("type");
                 String strAmount = obj.getString("amount");
                 int amount = Integer.parseInt(strAmount);
+
+                if (Objects.equals(type, "wealth")) {
+                    totalWealth += amount;
+                } else if (Objects.equals(type, "debt")) {
+                    totalDebt += amount;
+                }
                 dataset.addValue(amount, name, type);
-                pieSet.setValue(name, amount);
+                pieSet.setValue("Debt", amount);
             }
+
+            pieSet.setValue("Debt", totalDebt);
+            pieSet.setValue("Wealth", totalWealth);
+
             JFreeChart barChart = ChartFactory.createBarChart("W&D Bar Chart", "Wealth & Debt", "Amount",
                     dataset, PlotOrientation.VERTICAL, true, true, false);
 
-            JFreeChart pieChart = ChartFactory.createPieChart("Pie Chart", dataset, true, true, false)
+            JFreeChart pieChart = ChartFactory.createPieChart("Pie Chart", pieSet, true, true, false);
 
             ChartUtils.saveChartAsPNG(new File("/Users/palmerlarson/IdeaProjects/IndieProject/src/main/webapp/images/GraphCharts/barChart.png"), barChart, 650, 400);
+            ChartUtils.saveChartAsPNG(new File("/Users/palmerlarson/IdeaProjects/IndieProject/src/main/webapp/images/GraphCharts/pieChart.png"), pieChart, 650, 400);
+
             resp.setContentType("image/png");
-            ChartUtils.writeChartAsPNG(out, barChart, 400, 300);
+
+            ChartUtils.writeChartAsPNG(out, pieChart, 400, 300);
         } catch (Exception e) {
             System.err.println(e.toString()); /* Throw exceptions to log files */
         }
