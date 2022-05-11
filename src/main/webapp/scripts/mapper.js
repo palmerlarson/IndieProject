@@ -7,6 +7,10 @@ const addToArray = () => {
     let amount = document.querySelector("#amount").value;
     let type = document.querySelector("#type").value;
     let displayList = document.querySelector(".list");
+    let debtT = document.querySelector(".debtT");
+    let wealthT = document.querySelector(".wealthT");
+    let totalW = Number(document.querySelector(".monthly").textContent);
+    let totalD = 0;
 
     //error checking
     if (name == null || amount == null) {
@@ -24,8 +28,18 @@ const addToArray = () => {
         onclick="deleteItem('${name}')"><i class="fa-solid fa-trash text-lg"></i></button><span> ${name}</span> - <span class="text-rose-600">$ ${amount}</span></li>`;
     }
 
+    //total display
+    for (let x in worth) {
+        if (worth[x].type === "debt") {
+            totalD += Number(worth[x].amount);
+        } else {
+            totalW += Number(worth[x].amount);
+        }
+    }
 
-    console.log(worth);
+    debtT.innerHTML = `Debt: $${totalD}`;
+    wealthT.innerHTML = `Wealth: $${totalW}`;
+
 }
 //deletes item from json arr
 const deleteItem = item => {
@@ -45,15 +59,23 @@ const deleteItem = item => {
 //https://stackoverflow.com/questions/42924898/when-trying-to-put-the-image-png-response-of-an-xmlhttprequest-i-am-getting-garb
 const submit = () => {
     let imgDiv = document.querySelector(".imgOutput");
-    let xhr = new XMLHttpRequest();
     let image = document.getElementById("captchaImg");
+    let configBtn = document.querySelector(".configBtn");
+    let tips = document.querySelector(".tips");
+    imgDiv.classList.add("invisible")
     image.classList.add("invisible");
+    tips.classList.add("invisible");
+    configBtn.classList.add("hidden");
+    let xhr = new XMLHttpRequest();
     xhr.open("POST", "wealthMapper", true);
     xhr.responseType = "arraybuffer";
     xhr.setRequestHeader("Content-type", "image/png");
     xhr.onreadystatechange = () => {
         if(xhr.readyState === 4) {
             image.classList.remove("invisible");
+            imgDiv.classList.remove("invisible");
+            tips.classList.remove("invisible");
+            configBtn.classList.remove("hidden");
             image.setAttribute('src', 'data:image/png;base64,' + btoa(String.fromCharCode.apply(null, new Uint8Array(xhr.response))));
             console.log(xhr.response);
         }

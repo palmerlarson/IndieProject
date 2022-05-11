@@ -1514,3 +1514,51 @@ java.lang.NullPointerException: inStream parameter is null
 [DEBUG] 2022-05-10 19:06:17.461 [http-nio-8080-exec-7] ToolDao - The list of users [com.palmerlarson.entity.Tool@9de6ecb7, com.palmerlarson.entity.Tool@9de76116, com.palmerlarson.entity.Tool@9de7d575, com.palmerlarson.entity.Tool@9de849d4, com.palmerlarson.entity.Tool@9c792be4, com.palmerlarson.entity.Tool@a2359c0f, com.palmerlarson.entity.Tool@9cf444d8, com.palmerlarson.entity.Tool@9cff3162, com.palmerlarson.entity.Tool@cd24119c]
 [DEBUG] 2022-05-10 19:27:45.013 [http-nio-8080-exec-6] ToolDao - The list of users [com.palmerlarson.entity.Tool@9de6ecb7, com.palmerlarson.entity.Tool@9de76116, com.palmerlarson.entity.Tool@9de7d575, com.palmerlarson.entity.Tool@9de849d4, com.palmerlarson.entity.Tool@9c792be4, com.palmerlarson.entity.Tool@a2359c0f, com.palmerlarson.entity.Tool@9cf444d8, com.palmerlarson.entity.Tool@9cff3162, com.palmerlarson.entity.Tool@cd24119c]
 [DEBUG] 2022-05-10 19:27:48.695 [http-nio-8080-exec-8] ToolDao - The list of users [com.palmerlarson.entity.Tool@9de6ecb7, com.palmerlarson.entity.Tool@9de76116, com.palmerlarson.entity.Tool@9de7d575, com.palmerlarson.entity.Tool@9de849d4, com.palmerlarson.entity.Tool@9c792be4, com.palmerlarson.entity.Tool@a2359c0f, com.palmerlarson.entity.Tool@9cf444d8, com.palmerlarson.entity.Tool@9cff3162, com.palmerlarson.entity.Tool@cd24119c]
+[ERROR] 2022-05-10 21:07:01.944 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:07:02.542 [http-nio-8080-exec-8] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:12:14.252 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:12:14.784 [http-nio-8080-exec-8] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:13:34.565 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:13:35.165 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:17:52.762 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:17:53.266 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:19:26.377 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:19:26.925 [http-nio-8080-exec-7] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:20:58.305 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:20:58.889 [http-nio-8080-exec-7] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:24:54.982 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:24:55.529 [http-nio-8080-exec-8] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:33:04.947 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:33:05.469 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:36:49.939 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:36:50.534 [http-nio-8080-exec-8] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:39:34.518 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:39:35.083 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:41:21.199 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:41:21.707 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:42:47.885 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:42:48.405 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:55:52.843 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:55:53.376 [http-nio-8080-exec-8] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:58:47.584 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 21:58:48.074 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:01:53.473 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:01:53.982 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:32:33.594 [http-nio-8080-exec-8] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:32:34.239 [http-nio-8080-exec-9] WealthMapper - INFOjava.lang.NullPointerException
+[DEBUG] 2022-05-10 22:32:34.634 [http-nio-8080-exec-7] ToolDao - The list of users [com.palmerlarson.entity.Tool@9de6ecb7, com.palmerlarson.entity.Tool@9de76116, com.palmerlarson.entity.Tool@9de7d575, com.palmerlarson.entity.Tool@9de849d4, com.palmerlarson.entity.Tool@9c792be4, com.palmerlarson.entity.Tool@9cf444d8, com.palmerlarson.entity.Tool@9cff3162, com.palmerlarson.entity.Tool@4107fa94, com.palmerlarson.entity.Tool@4e01f384]
+[ERROR] 2022-05-10 22:33:06.772 [http-nio-8080-exec-1] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:53:54.910 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:53:55.459 [http-nio-8080-exec-7] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:56:35.307 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:56:35.840 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:58:18.391 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 22:58:18.975 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 23:04:24.503 [http-nio-8080-exec-7] WealthMapper - INFOjava.lang.NullPointerException
+[DEBUG] 2022-05-10 23:04:28.593 [http-nio-8080-exec-5] ToolDao - The list of users [com.palmerlarson.entity.Tool@9de6ecb7, com.palmerlarson.entity.Tool@9de76116, com.palmerlarson.entity.Tool@9de7d575, com.palmerlarson.entity.Tool@9de849d4, com.palmerlarson.entity.Tool@9c792be4, com.palmerlarson.entity.Tool@9cf444d8, com.palmerlarson.entity.Tool@9cff3162, com.palmerlarson.entity.Tool@4107fa94, com.palmerlarson.entity.Tool@4e01f384]
+[ERROR] 2022-05-10 23:06:47.833 [http-nio-8080-exec-4] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 23:06:48.394 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 23:12:31.750 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 23:12:32.284 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 23:15:07.947 [http-nio-8080-exec-5] WealthMapper - INFOjava.lang.NullPointerException
+[ERROR] 2022-05-10 23:15:08.460 [http-nio-8080-exec-6] WealthMapper - INFOjava.lang.NullPointerException
