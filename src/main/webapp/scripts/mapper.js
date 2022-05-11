@@ -47,6 +47,7 @@ const submit = () => {
     let imgDiv = document.querySelector(".imgOutput");
     let xhr = new XMLHttpRequest();
     let image = document.getElementById("captchaImg");
+    image.classList.add("invisible");
     xhr.open("POST", "wealthMapper", true);
     xhr.responseType = "arraybuffer";
     xhr.setRequestHeader("Content-type", "image/png");
@@ -54,7 +55,20 @@ const submit = () => {
         if(xhr.readyState === 4) {
             image.classList.remove("invisible");
             image.setAttribute('src', 'data:image/png;base64,' + btoa(String.fromCharCode.apply(null, new Uint8Array(xhr.response))));
-            console.log(xhr.response)
+            console.log(xhr.response);
+        }
+    }
+    xhr.send(JSON.stringify(worth));
+}
+
+const save = () => {
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "graphs", true);
+    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.onreadystatechange = () => {
+        if(xhr.readyState === 4) {
+            console.log("saved");
+            console.log(xhr.response);
         }
     }
     xhr.send(JSON.stringify(worth));

@@ -8,7 +8,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.palmerlarson.auth.*;
 import com.palmerlarson.entity.User;
-import com.palmerlarson.persistence.*;
+import com.palmerlarson.persistence.UserDao;
 import com.palmerlarson.util.PropertiesLoader;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -37,10 +37,6 @@ import java.security.PublicKey;
 import java.security.interfaces.RSAPublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.RSAPublicKeySpec;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Properties;
@@ -87,6 +83,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         String authCode = req.getParameter("code");
         String userName = null;
         String email = null;
+        UserDao dao = new UserDao();
 
         if (authCode == null) {
             //forward to an error page or back to the login

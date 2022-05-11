@@ -99,4 +99,28 @@ public class ToolDao {
 
         return tools;
     }
+
+//    /**
+//     * Gets all.
+//     *
+//     * @return the all
+//     */
+//    public List<Tool> getByUserId(User user) {
+//
+//        Session session = sessionFactory.openSession();
+//
+//        CriteriaBuilder builder = session.getCriteriaBuilder();
+//        CriteriaQuery<Tool> query = builder.createQuery(Tool.class);
+//        Root<Tool> root = query.from(Tool.class);
+//        Expression<String> propertyPath = root.get("user_id");
+//        query.where(builder.equal(propertyPath, name));
+//        User user;
+//
+//        try {
+//            user = session.createQuery(query).getSingleResult();
+//        } catch (NoResultException res) {
+//            logger.info("There was no result: ", res);
+//            user = null;
+//        }
+//    }
 }
