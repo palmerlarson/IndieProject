@@ -267,6 +267,11 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         }
     }
 
+    /**
+     * Adds to db and opens a new session
+     * @param req HttpServletRequest
+     * @param userName userName
+     */
     public void addToDatabase(HttpServletRequest req, String userName) {
         UserDao dao = new UserDao();
         if (dao.getByUserName(userName) == null) {
