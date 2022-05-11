@@ -99,10 +99,20 @@ const save = () => {
     xhr.send(JSON.stringify(worth));
 }
 
-//locks up button
-const btn = document.querySelector(".infoBtn");
-btn.addEventListener("click", function() {
+const submitting = () => {
+    let btn = document.querySelector(".infoBtn");
     let div = document.querySelector(".infoDiv");
-    btn.disabled = true;
-    div.innerHTML += `<h3 class="text-red-600">Your information has been updated</h3>`;
-});
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "infoPage", true);
+    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.onreadystatechange = () => {
+        if(xhr.readyState === 4) {
+            console.log("saved");
+            btn.parentNode.removeChild(btn);
+            div.innerHTML += `<h3 class="text-red-600">Your information has been updated</h3>`;
+            console.log(xhr.response);
+        }
+    }
+    xhr.send(JSON.stringify(worth));
+}

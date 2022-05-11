@@ -69,7 +69,7 @@ public class cGenerator extends HttpServlet {
 
             ChartUtils.writeChartAsPNG(out, pieChart, 400, 300);
         }catch (Exception e) {
-            System.err.println(e.toString()); /* Throw exceptions to log files */
+            logger.error(e.toString()); /* Throw exceptions to log files */
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/graphs.jsp");

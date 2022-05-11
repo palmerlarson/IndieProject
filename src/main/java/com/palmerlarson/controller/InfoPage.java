@@ -36,6 +36,35 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         pullName(req, resp, logger);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage.jsp");
+        dispatcher.forward(req, resp);
+    }
+
+    /**
+     * Updates the user profile
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            String firstName = req.getParameter("fName");
+            String lastName = req.getParameter("lName");
+            int grossIncome = Integer.parseInt(req.getParameter("income"));
+            HttpSession session=req.getSession(true);
+            User uObj = (User)session.getAttribute("currentUser");
+            UserDao dao = new UserDao();
+
+            if (firstName != null && lastName != null && grossIncome != 0) {
+                uObj.setFirst_name(firstName);
+                uObj.setLast_name(lastName);
+                uObj.setGross_income(grossIncome);
+                dao.saveOrUpdate(uObj);
+            }
+        } catch (Exception e) {
+            logger.error(e.toString()); /* Throw exceptions to log files */
+        }
 
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage.jsp");
@@ -43,27 +72,12 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
     }
 
 
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String firstName = req.getParameter("fName");
-        String lastName = req.getParameter("lName");
-        int grossIncome = Integer.parseInt(req.getParameter("income"));
-        HttpSession session=req.getSession(true);
-        User uObj = (User)session.getAttribute("currentUser");
-        UserDao dao = new UserDao();
-
-        if (firstName != null && lastName != null && grossIncome != 0) {
-            uObj.setFirst_name(firstName);
-            uObj.setLast_name(lastName);
-            uObj.setGross_income(grossIncome);
-            dao.saveOrUpdate(uObj);
-        }
-
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage");
-        dispatcher.forward(req, resp);
-    }
-
-
+    /**
+     * Allows for user attributes along many classes
+     * @param req
+     * @param resp
+     * @param logger
+     */
     public static void pullName(HttpServletRequest req, HttpServletResponse resp, Logger logger) {
         try {
             resp.setContentType("text/html");
