@@ -1,0 +1,6 @@
+com.palmerlarson.auth
+com.palmerlarson.controller
+com.palmerlarson.entity
+com.palmerlarson.persistence
+com.palmerlarson.testUtils
+com.palmerlarson.util

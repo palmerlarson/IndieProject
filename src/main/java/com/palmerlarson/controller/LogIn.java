@@ -16,8 +16,8 @@ import java.util.Properties;
         urlPatterns = {"/logIn"}
 )
 
-/** Begins the authentication process using AWS Cognito
- *
+/**
+ * Log in via cognito
  */
 public class  LogIn extends HttpServlet implements PropertiesLoader {
     Properties properties;

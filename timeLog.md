@@ -135,3 +135,12 @@
 * Login/auth -> opens session
 * Logout -> ends session
 * userName returned to session
+
+### 5/6/22 - 5/11/22
+* Proj work
+* Successful full deployment
+* Presentation recorded
+* Jdoc generated
+* comment fixes
+* submission
+* https://youtu.be/_Ue8c5uBF34
