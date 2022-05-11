@@ -1,9 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <%@include file="includes/head.jsp"%>
-<div>
-<%@include file="includes/header.jsp"%>
 <body>
+<%@include file="includes/header.jsp"%>
 <div class="flex mt-8">
     <div class="m-auto w-2/5 rounded-xl bg-orange-50 py-40 text-center drop-shadow-2xl">
         <form action="infoPage" method="POST">

@@ -18,6 +18,8 @@ import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -30,10 +32,31 @@ public class Graphs extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        InfoPage.pullName(req, resp, logger);
+        HttpSession session=req.getSession(false);
+        ToolDao tDao = new ToolDao();
+        List<Tool> toolList = tDao.getAll();
 
+        resp.setContentType("text/html");
 
-
+        ArrayList<String> strArr = new ArrayList<String>();
+        for (Tool tLister: toolList) {
+            User tUserId = tLister.getUser_id();
+            User uObj = (User)session.getAttribute("currentUser");
+            int tInt = tUserId.getId();
+            int uInt = uObj.getId();
+            if (tInt == uInt) {
+                int tId = tLister.getTool_id();
+                int wealth = tLister.getPositive_asset();
+                int debt = tLister.getNegative_asset();
+                strArr.add("<li id='" + tId
+                        + "'><button id=\"btnStatus\" class=\"btn\" onclick=\"removeTool('" + tId + "')\">"
+                        + "<i class=\"fa-solid fa-trash text-lg\"></i></button> Wealth: "
+                        + wealth + "- Debt: " + debt
+                        + "<button id=\"btnStatus\" class=\"btn\" onclick='generateChart(" + wealth + ","
+                        + debt + ")'>Generate</button></li>");
+            }
+        }
+        req.setAttribute("liArr", strArr);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/graphs.jsp");
         dispatcher.forward(req, resp);
