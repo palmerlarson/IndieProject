@@ -19,7 +19,7 @@
     </div>
 
     <div class="tips relative invisible w-2/4 mr-10 rounded-xl bg-orange-50 py-2 text-center content-center drop-shadow-2xl z-10">
-        <h1 class="list-disc">Tips:</h1>
+        <h1>Tips:</h1>
         <ol>
             <li>List out your debt</li>
             <li>Pay more than the minimum on your credit card</li>

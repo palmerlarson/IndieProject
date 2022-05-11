@@ -71,7 +71,7 @@ public class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-        User retrieveUser = dao.getById(1);
+        User retrieveUser = dao.getById(6);
         dao.delete(retrieveUser);
         assertNull(dao.getById(1));
     }

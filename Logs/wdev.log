@@ -1,0 +1,703 @@
+[DEBUG] 2022-05-11 03:13:47.338 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2022-05-11 03:13:47.340 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2022-05-11 03:13:47.342 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2022-05-11 03:13:47.386 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2022-05-11 03:13:47.388 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2022-05-11 03:13:47.621 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2022-05-11 03:13:47.622 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2022-05-11 03:13:47.628 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2022-05-11 03:13:47.913 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2022-05-11 03:13:47.954 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2022-05-11 03:13:47.955 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2022-05-11 03:13:47.970 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2022-05-11 03:13:47.998 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@333cb916
+[DEBUG] 2022-05-11 03:13:47.998 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@333cb916
+[DEBUG] 2022-05-11 03:13:47.998 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@333cb916
+[DEBUG] 2022-05-11 03:13:47.999 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5bca7664
+[DEBUG] 2022-05-11 03:13:48.000 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@42fcc7e6
+[DEBUG] 2022-05-11 03:13:48.000 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@5ce4369b
+[DEBUG] 2022-05-11 03:13:48.001 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@6ae7deac
+[DEBUG] 2022-05-11 03:13:48.001 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@6ae7deac
+[DEBUG] 2022-05-11 03:13:48.001 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6ae7deac
+[DEBUG] 2022-05-11 03:13:48.002 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@21fdfefc
+[DEBUG] 2022-05-11 03:13:48.002 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@21fdfefc
+[DEBUG] 2022-05-11 03:13:48.002 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@21fdfefc
+[DEBUG] 2022-05-11 03:13:48.003 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@108bdbd8
+[DEBUG] 2022-05-11 03:13:48.003 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@108bdbd8
+[DEBUG] 2022-05-11 03:13:48.003 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@108bdbd8
+[DEBUG] 2022-05-11 03:13:48.004 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@15dd5ac2
+[DEBUG] 2022-05-11 03:13:48.004 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@15dd5ac2
+[DEBUG] 2022-05-11 03:13:48.004 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@15dd5ac2
+[DEBUG] 2022-05-11 03:13:48.005 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@58a4a74d
+[DEBUG] 2022-05-11 03:13:48.005 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@58a4a74d
+[DEBUG] 2022-05-11 03:13:48.005 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@58a4a74d
+[DEBUG] 2022-05-11 03:13:48.005 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4f63e3c7
+[DEBUG] 2022-05-11 03:13:48.005 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4f63e3c7
+[DEBUG] 2022-05-11 03:13:48.005 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4f63e3c7
+[DEBUG] 2022-05-11 03:13:48.006 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1e54cb33
+[DEBUG] 2022-05-11 03:13:48.006 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1e54cb33
+[DEBUG] 2022-05-11 03:13:48.006 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1e54cb33
+[DEBUG] 2022-05-11 03:13:48.006 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5b4d25e7
+[DEBUG] 2022-05-11 03:13:48.006 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5b4d25e7
+[DEBUG] 2022-05-11 03:13:48.007 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2f61f937
+[DEBUG] 2022-05-11 03:13:48.007 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2f61f937
+[DEBUG] 2022-05-11 03:13:48.007 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@68dcfd52
+[DEBUG] 2022-05-11 03:13:48.008 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@68dcfd52
+[DEBUG] 2022-05-11 03:13:48.008 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@cc239ba
+[DEBUG] 2022-05-11 03:13:48.008 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2c708440
+[DEBUG] 2022-05-11 03:13:48.009 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@47547132
+[DEBUG] 2022-05-11 03:13:48.009 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@47547132
+[DEBUG] 2022-05-11 03:13:48.009 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@6f3f0fae
+[DEBUG] 2022-05-11 03:13:48.009 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@6f3f0fae
+[DEBUG] 2022-05-11 03:13:48.016 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@3e1624c7
+[DEBUG] 2022-05-11 03:13:48.016 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@3e1624c7
+[DEBUG] 2022-05-11 03:13:48.018 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@2b56f5f8
+[DEBUG] 2022-05-11 03:13:48.019 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@2b56f5f8
+[DEBUG] 2022-05-11 03:13:48.019 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@a20b94b
+[DEBUG] 2022-05-11 03:13:48.020 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@a20b94b
+[DEBUG] 2022-05-11 03:13:48.020 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@cfbc8e8
+[DEBUG] 2022-05-11 03:13:48.020 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@cfbc8e8
+[DEBUG] 2022-05-11 03:13:48.021 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1c504e66
+[DEBUG] 2022-05-11 03:13:48.021 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1c504e66
+[DEBUG] 2022-05-11 03:13:48.022 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@35835e65
+[DEBUG] 2022-05-11 03:13:48.023 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@35835e65
+[DEBUG] 2022-05-11 03:13:48.024 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5136207f
+[DEBUG] 2022-05-11 03:13:48.025 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5136207f
+[DEBUG] 2022-05-11 03:13:48.026 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@59496961
+[DEBUG] 2022-05-11 03:13:48.026 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@59496961
+[DEBUG] 2022-05-11 03:13:48.027 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@1ad8df52
+[DEBUG] 2022-05-11 03:13:48.027 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1ad8df52
+[DEBUG] 2022-05-11 03:13:48.028 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@9fec931
+[DEBUG] 2022-05-11 03:13:48.028 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@9fec931
+[DEBUG] 2022-05-11 03:13:48.028 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@9fec931
+[DEBUG] 2022-05-11 03:13:48.030 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7d0cc890
+[DEBUG] 2022-05-11 03:13:48.030 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@ba354ca
+[DEBUG] 2022-05-11 03:13:48.030 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@ba354ca
+[DEBUG] 2022-05-11 03:13:48.030 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@ba354ca
+[DEBUG] 2022-05-11 03:13:48.031 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4a05d8ae
+[DEBUG] 2022-05-11 03:13:48.031 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@3910fe11
+[DEBUG] 2022-05-11 03:13:48.032 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@3910fe11
+[DEBUG] 2022-05-11 03:13:48.032 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@2c2db130
+[DEBUG] 2022-05-11 03:13:48.033 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2c2db130
+[DEBUG] 2022-05-11 03:13:48.033 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@60737b23
+[DEBUG] 2022-05-11 03:13:48.033 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@60737b23
+[DEBUG] 2022-05-11 03:13:48.034 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@74075134
+[DEBUG] 2022-05-11 03:13:48.034 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@74075134
+[DEBUG] 2022-05-11 03:13:48.035 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@8d7b252
+[DEBUG] 2022-05-11 03:13:48.035 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@8d7b252
+[DEBUG] 2022-05-11 03:13:48.035 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@540a903b
+[DEBUG] 2022-05-11 03:13:48.036 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@24361cfc
+[DEBUG] 2022-05-11 03:13:48.036 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@24361cfc
+[DEBUG] 2022-05-11 03:13:48.036 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@24361cfc
+[DEBUG] 2022-05-11 03:13:48.036 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2f2d52ef
+[DEBUG] 2022-05-11 03:13:48.037 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2f2d52ef
+[DEBUG] 2022-05-11 03:13:48.037 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2f2d52ef
+[DEBUG] 2022-05-11 03:13:48.037 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@26a2f7f9
+[DEBUG] 2022-05-11 03:13:48.037 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@10ee04df
+[DEBUG] 2022-05-11 03:13:48.038 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@3900fa71
+[DEBUG] 2022-05-11 03:13:48.038 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@3900fa71
+[DEBUG] 2022-05-11 03:13:48.038 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@3900fa71
+[DEBUG] 2022-05-11 03:13:48.039 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@61e3cf4d
+[DEBUG] 2022-05-11 03:13:48.039 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@61e3cf4d
+[DEBUG] 2022-05-11 03:13:48.039 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@61e3cf4d
+[DEBUG] 2022-05-11 03:13:48.040 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@3157e4c0
+[DEBUG] 2022-05-11 03:13:48.040 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7c1812b3
+[DEBUG] 2022-05-11 03:13:48.042 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@28348c6
+[DEBUG] 2022-05-11 03:13:48.042 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@28348c6
+[DEBUG] 2022-05-11 03:13:48.043 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@53c68ce
+[DEBUG] 2022-05-11 03:13:48.045 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4f824872
+[DEBUG] 2022-05-11 03:13:48.046 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4f824872
+[DEBUG] 2022-05-11 03:13:48.047 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@1e008f36
+[DEBUG] 2022-05-11 03:13:48.047 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1e008f36
+[DEBUG] 2022-05-11 03:13:48.047 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2aeefcc
+[DEBUG] 2022-05-11 03:13:48.048 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@7ae9a33a
+[DEBUG] 2022-05-11 03:13:48.049 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@29528a22
+[DEBUG] 2022-05-11 03:13:48.050 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@40298285
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@40298285
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6482eef
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1fcf9739
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5b498842
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1cb37ee4
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5bcb04cb
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@385e36d4
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2fc2a205
+[DEBUG] 2022-05-11 03:13:48.051 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@2881ad47
+[DEBUG] 2022-05-11 03:13:48.073 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2022-05-11 03:13:48.076 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2022-05-11 03:13:48.077 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2022-05-11 03:13:48.077 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2022-05-11 03:13:48.077 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2022-05-11 03:13:48.078 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2022-05-11 03:13:48.078 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2022-05-11 03:13:48.079 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2022-05-11 03:13:48.079 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2022-05-11 03:13:48.079 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2022-05-11 03:13:48.079 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2022-05-11 03:13:48.080 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2022-05-11 03:13:48.080 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2022-05-11 03:13:48.081 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2022-05-11 03:13:48.084 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://aa9k253xu276jc.cg2el8onktgs.us-east-2.rds.amazonaws.com:3306/wdev
+[INFO ] 2022-05-11 03:13:48.084 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2022-05-11 03:13:48.085 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2022-05-11 03:13:48.278 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2022-05-11 03:13:49.853 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.28
+      major : 8
+      minor : 0
+[DEBUG] 2022-05-11 03:13:49.858 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.28 (Revision: 7ff2161da3899f379fb3171b6538b191b1c5c7e2)
+      major : 8
+      minor : 0
+[DEBUG] 2022-05-11 03:13:49.858 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2022-05-11 03:13:49.873 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2022-05-11 03:13:49.885 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2022-05-11 03:13:49.952 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2022-05-11 03:13:50.108 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2022-05-11 03:13:50.115 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4d41ba0f] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3c87e6b7]
+[DEBUG] 2022-05-11 03:13:50.159 [main] AnnotationBinder - Binding entity from annotated class: com.palmerlarson.entity.User
+[DEBUG] 2022-05-11 03:13:50.172 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2022-05-11 03:13:50.174 [main] EntityBinder - Import with entity name User
+[DEBUG] 2022-05-11 03:13:50.176 [main] EntityBinder - Bind entity com.palmerlarson.entity.User on table user
+[DEBUG] 2022-05-11 03:13:50.204 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.206 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2022-05-11 03:13:50.207 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:id]
+[DEBUG] 2022-05-11 03:13:50.208 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2022-05-11 03:13:50.210 [main] PropertyBinder - Building property id
+[DEBUG] 2022-05-11 03:13:50.212 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2022-05-11 03:13:50.213 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.213 [main] PropertyBinder - MetadataSourceProcessor property first_name with lazy=false
+[DEBUG] 2022-05-11 03:13:50.213 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:first_name]
+[DEBUG] 2022-05-11 03:13:50.213 [main] SimpleValueBinder - building SimpleValue for first_name
+[DEBUG] 2022-05-11 03:13:50.213 [main] PropertyBinder - Building property first_name
+[DEBUG] 2022-05-11 03:13:50.213 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=gross_income, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.213 [main] PropertyBinder - MetadataSourceProcessor property gross_income with lazy=false
+[DEBUG] 2022-05-11 03:13:50.213 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:gross_income]
+[DEBUG] 2022-05-11 03:13:50.214 [main] SimpleValueBinder - building SimpleValue for gross_income
+[DEBUG] 2022-05-11 03:13:50.214 [main] PropertyBinder - Building property gross_income
+[DEBUG] 2022-05-11 03:13:50.214 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.214 [main] PropertyBinder - MetadataSourceProcessor property last_name with lazy=false
+[DEBUG] 2022-05-11 03:13:50.214 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:last_name]
+[DEBUG] 2022-05-11 03:13:50.215 [main] SimpleValueBinder - building SimpleValue for last_name
+[DEBUG] 2022-05-11 03:13:50.215 [main] PropertyBinder - Building property last_name
+[DEBUG] 2022-05-11 03:13:50.216 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='id', referencedColumn='user_id', mappedBy=''}
+[DEBUG] 2022-05-11 03:13:50.218 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=tool, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.221 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=userName, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.222 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2022-05-11 03:13:50.222 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.User:userName]
+[DEBUG] 2022-05-11 03:13:50.222 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2022-05-11 03:13:50.223 [main] PropertyBinder - Building property userName
+[DEBUG] 2022-05-11 03:13:50.224 [main] AnnotationBinder - Binding entity from annotated class: com.palmerlarson.entity.Tool
+[DEBUG] 2022-05-11 03:13:50.224 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2022-05-11 03:13:50.224 [main] EntityBinder - Import with entity name Tool
+[DEBUG] 2022-05-11 03:13:50.224 [main] EntityBinder - Bind entity com.palmerlarson.entity.Tool on table tool
+[DEBUG] 2022-05-11 03:13:50.228 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tool), mappingColumn=tool_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.228 [main] PropertyBinder - MetadataSourceProcessor property tool_id with lazy=false
+[DEBUG] 2022-05-11 03:13:50.228 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.Tool:tool_id]
+[DEBUG] 2022-05-11 03:13:50.228 [main] SimpleValueBinder - building SimpleValue for tool_id
+[DEBUG] 2022-05-11 03:13:50.228 [main] PropertyBinder - Building property tool_id
+[DEBUG] 2022-05-11 03:13:50.229 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(tool_id)]), tool_id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2022-05-11 03:13:50.229 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tool), mappingColumn=negative_asset, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.229 [main] PropertyBinder - MetadataSourceProcessor property negative_asset with lazy=false
+[DEBUG] 2022-05-11 03:13:50.229 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.Tool:negative_asset]
+[DEBUG] 2022-05-11 03:13:50.230 [main] SimpleValueBinder - building SimpleValue for negative_asset
+[DEBUG] 2022-05-11 03:13:50.230 [main] PropertyBinder - Building property negative_asset
+[DEBUG] 2022-05-11 03:13:50.230 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tool), mappingColumn=positive_asset, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.230 [main] PropertyBinder - MetadataSourceProcessor property positive_asset with lazy=false
+[DEBUG] 2022-05-11 03:13:50.230 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.palmerlarson.entity.Tool:positive_asset]
+[DEBUG] 2022-05-11 03:13:50.230 [main] SimpleValueBinder - building SimpleValue for positive_asset
+[DEBUG] 2022-05-11 03:13:50.230 [main] PropertyBinder - Building property positive_asset
+[DEBUG] 2022-05-11 03:13:50.231 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2022-05-11 03:13:50.231 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(tool), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2022-05-11 03:13:50.232 [main] PropertyBinder - Building property user_id
+[DEBUG] 2022-05-11 03:13:50.235 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2022-05-11 03:13:50.235 [main] SimpleValueBinder - Starting fillSimpleValue for first_name
+[DEBUG] 2022-05-11 03:13:50.235 [main] SimpleValueBinder - Starting fillSimpleValue for gross_income
+[DEBUG] 2022-05-11 03:13:50.235 [main] SimpleValueBinder - Starting fillSimpleValue for last_name
+[DEBUG] 2022-05-11 03:13:50.235 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2022-05-11 03:13:50.235 [main] SimpleValueBinder - Starting fillSimpleValue for tool_id
+[DEBUG] 2022-05-11 03:13:50.235 [main] SimpleValueBinder - Starting fillSimpleValue for negative_asset
+[DEBUG] 2022-05-11 03:13:50.235 [main] SimpleValueBinder - Starting fillSimpleValue for positive_asset
+[DEBUG] 2022-05-11 03:13:50.238 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2022-05-11 03:13:50.240 [main] PrimaryKey - Forcing column [tool_id] to be non-null as it is part of the primary key for table [tool]
+[DEBUG] 2022-05-11 03:13:50.241 [main] PropertyBinder - Building property tool
+[DEBUG] 2022-05-11 03:13:50.243 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.palmerlarson.entity.User
+[DEBUG] 2022-05-11 03:13:50.245 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.palmerlarson.entity.User
+[DEBUG] 2022-05-11 03:13:50.266 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2022-05-11 03:13:50.267 [main] Settings - SessionFactory name : null
+[DEBUG] 2022-05-11 03:13:50.268 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2022-05-11 03:13:50.268 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2022-05-11 03:13:50.268 [main] Settings - Statistics: disabled
+[DEBUG] 2022-05-11 03:13:50.268 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2022-05-11 03:13:50.268 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2022-05-11 03:13:50.268 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Default null ordering: NONE
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Query language substitutions: {}
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Named query checking : enabled
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Second-level cache: disabled
+[DEBUG] 2022-05-11 03:13:50.269 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - JDBC batch size: 15
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2022-05-11 03:13:50.270 [main] Settings - JPA compliance - query : 
+[DEBUG] 2022-05-11 03:13:50.271 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2022-05-11 03:13:50.271 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2022-05-11 03:13:50.271 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2022-05-11 03:13:50.306 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2022-05-11 03:13:50.319 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2022-05-11 03:13:50.319 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/palmerlarson/IdeaProjects/IndieProject/target/test-classes:/Users/palmerlarson/IdeaProjects/IndieProject/target/classes:/Users/palmerlarson/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/palmerlarson/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/palmerlarson/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/palmerlarson/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/palmerlarson/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/palmerlarson/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/palmerlarson/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/palmerlarson/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/palmerlarson/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/palmerlarson/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/palmerlarson/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/palmerlarson/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/palmerlarson/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/palmerlarson/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/palmerlarson/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/palmerlarson/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/palmerlarson/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/palmerlarson/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/palmerlarson/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/palmerlarson/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/Users/palmerlarson/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/palmerlarson/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/palmerlarson/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/palmerlarson/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/palmerlarson/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/palmerlarson/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/palmerlarson/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/palmerlarson/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/palmerlarson/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar:/Users/palmerlarson/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/palmerlarson/.m2/repository/com/auth0/java-jwt/3.18.3/java-jwt-3.18.3.jar:/Users/palmerlarson/.m2/repository/org/json/json/20170516/json-20170516.jar:/Users/palmerlarson/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar:/Users/palmerlarson/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar:/Users/palmerlarson/.m2/repository/commons-codec/commons-codec/1.7/commons-codec-1.7.jar:/Users/palmerlarson/.m2/repository/org/jfree/jfreechart/1.5.3/jfreechart-1.5.3.jar:/Users/palmerlarson/Library/Application Support/JetBrains/IntelliJIdea2021.3/javascript/extLibs/http_kit.fontawesome.com_ae280f9e8b.js:/Users/palmerlarson/Library/Application Support/JetBrains/IntelliJIdea2021.3/javascript/extLibs/http_unpkg.com_flowbite@1.4.4_dist_flowbite.js, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.palmerlarson.persistence.UserDaoTest,deleteSuccess, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/palmerlarson, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2022-01-18, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, connection.password=palmer1995, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.14+8-LTS-263, user.name=palmerlarson, path.separator=:, hibernate.connection.username=****, os.version=12.3.1, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://aa9k253xu276jc.cg2el8onktgs.us-east-2.rds.amazonaws.com:3306/wdev, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/7_/hjc2wkns2zj3yl0np9mvr3cm0000gn/T/, java.version=11.0.14, user.dir=/Users/palmerlarson/IdeaProjects/IndieProject, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5dbb50f3, java.library.path=/Users/palmerlarson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.14+8-LTS-263, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://aa9k253xu276jc.cg2el8onktgs.us-east-2.rds.amazonaws.com:3306/wdev, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2022-05-11 03:13:50.332 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2022-05-11 03:13:50.332 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2022-05-11 03:13:50.334 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2022-05-11 03:13:50.335 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4d41ba0f] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@79d82f66]
+[DEBUG] 2022-05-11 03:13:50.367 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.Tool] is safe
+[DEBUG] 2022-05-11 03:13:50.367 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.Tool
+[DEBUG] 2022-05-11 03:13:50.378 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.Tool] is safe
+[DEBUG] 2022-05-11 03:13:50.378 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.Tool
+[DEBUG] 2022-05-11 03:13:50.550 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.User] is safe
+[DEBUG] 2022-05-11 03:13:50.551 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.User
+[DEBUG] 2022-05-11 03:13:50.552 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.palmerlarson.entity.User] is safe
+[DEBUG] 2022-05-11 03:13:50.552 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.palmerlarson.entity.User
+[DEBUG] 2022-05-11 03:13:50.600 [main] AbstractEntityPersister - Static SQL for entity: com.palmerlarson.entity.Tool
+[DEBUG] 2022-05-11 03:13:50.600 [main] AbstractEntityPersister -  Version select: select tool_id from tool where tool_id =?
+[DEBUG] 2022-05-11 03:13:50.600 [main] AbstractEntityPersister -  Snapshot select: select tool_.tool_id, tool_.negative_asset as negative2_0_, tool_.positive_asset as positive3_0_, tool_.user_id as user_id4_0_ from tool tool_ where tool_.tool_id=?
+[DEBUG] 2022-05-11 03:13:50.600 [main] AbstractEntityPersister -  Insert 0: insert into tool (negative_asset, positive_asset, user_id, tool_id) values (?, ?, ?, ?)
+[DEBUG] 2022-05-11 03:13:50.600 [main] AbstractEntityPersister -  Update 0: update tool set negative_asset=?, positive_asset=?, user_id=? where tool_id=?
+[DEBUG] 2022-05-11 03:13:50.600 [main] AbstractEntityPersister -  Delete 0: delete from tool where tool_id=?
+[DEBUG] 2022-05-11 03:13:50.600 [main] AbstractEntityPersister -  Identity insert: insert into tool (negative_asset, positive_asset, user_id) values (?, ?, ?)
+[DEBUG] 2022-05-11 03:13:50.612 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7a1a3468]
+[DEBUG] 2022-05-11 03:13:50.613 [main] MetamodelGraphWalker - Visiting attribute path : negative_asset
+[DEBUG] 2022-05-11 03:13:50.613 [main] MetamodelGraphWalker - Visiting attribute path : positive_asset
+[DEBUG] 2022-05-11 03:13:50.613 [main] MetamodelGraphWalker - Visiting attribute path : user_id
+[DEBUG] 2022-05-11 03:13:50.615 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19dc0d32]
+[DEBUG] 2022-05-11 03:13:50.615 [main] MetamodelGraphWalker - Visiting attribute path : user_id.first_name
+[DEBUG] 2022-05-11 03:13:50.615 [main] MetamodelGraphWalker - Visiting attribute path : user_id.gross_income
+[DEBUG] 2022-05-11 03:13:50.616 [main] MetamodelGraphWalker - Visiting attribute path : user_id.last_name
+[DEBUG] 2022-05-11 03:13:50.616 [main] MetamodelGraphWalker - Visiting attribute path : user_id.userName
+[DEBUG] 2022-05-11 03:13:50.616 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool
+[DEBUG] 2022-05-11 03:13:50.616 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@794eeaf8]
+[DEBUG] 2022-05-11 03:13:50.616 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.negative_asset
+[DEBUG] 2022-05-11 03:13:50.616 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.positive_asset
+[DEBUG] 2022-05-11 03:13:50.616 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.user_id
+[DEBUG] 2022-05-11 03:13:50.616 [main] MetamodelGraphWalker - Property path deemed to be circular : user_id.tool.user_id
+[DEBUG] 2022-05-11 03:13:50.616 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-05-11 03:13:50.623 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-05-11 03:13:50.631 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.Tool)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.Tool, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.Tool)
+          - EntityAttributeFetchImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:1>, path=com.palmerlarson.entity.Tool.user_id)
+             - EntityAttributeFetchImpl(entity=com.palmerlarson.entity.Tool, querySpaceUid=<gen:2>, path=com.palmerlarson.entity.Tool.user_id.tool)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.Tool)
+          - SQL table alias mapping - tool0_
+          - alias suffix - 0_
+          - suffixed key columns - {tool_id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user_id)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.palmerlarson.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(tool)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.palmerlarson.entity.Tool)
+                      - SQL table alias mapping - tool2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {tool_id1_0_2_}
+
+[DEBUG] 2022-05-11 03:13:50.633 [main] EntityLoader - Static select for entity com.palmerlarson.entity.Tool [NONE]: select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_, user1_.id as id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.gross_income as gross_in3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.userName as userName5_1_1_, tool2_.tool_id as tool_id1_0_2_, tool2_.negative_asset as negative2_0_2_, tool2_.positive_asset as positive3_0_2_, tool2_.user_id as user_id4_0_2_ from tool tool0_ left outer join user user1_ on tool0_.user_id=user1_.id left outer join tool tool2_ on user1_.id=tool2_.tool_id where tool0_.tool_id=?
+[DEBUG] 2022-05-11 03:13:50.634 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29f3c438]
+[DEBUG] 2022-05-11 03:13:50.634 [main] MetamodelGraphWalker - Visiting attribute path : negative_asset
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : positive_asset
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id
+[DEBUG] 2022-05-11 03:13:50.635 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5dbbb292]
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id.first_name
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id.gross_income
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id.last_name
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id.userName
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool
+[DEBUG] 2022-05-11 03:13:50.635 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@565aa4ac]
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.negative_asset
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.positive_asset
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Visiting attribute path : user_id.tool.user_id
+[DEBUG] 2022-05-11 03:13:50.635 [main] MetamodelGraphWalker - Property path deemed to be circular : user_id.tool.user_id
+[DEBUG] 2022-05-11 03:13:50.635 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-05-11 03:13:50.635 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-05-11 03:13:50.636 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.Tool)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.Tool, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.Tool)
+          - EntityAttributeFetchImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:1>, path=com.palmerlarson.entity.Tool.user_id)
+             - EntityAttributeFetchImpl(entity=com.palmerlarson.entity.Tool, querySpaceUid=<gen:2>, path=com.palmerlarson.entity.Tool.user_id.tool)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.Tool)
+          - SQL table alias mapping - tool0_
+          - alias suffix - 0_
+          - suffixed key columns - {tool_id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user_id)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.palmerlarson.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(tool)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.palmerlarson.entity.Tool)
+                      - SQL table alias mapping - tool2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {tool_id1_0_2_}
+
+[DEBUG] 2022-05-11 03:13:50.636 [main] EntityLoader - Static select for entity com.palmerlarson.entity.Tool [READ]: select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_, user1_.id as id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.gross_income as gross_in3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.userName as userName5_1_1_, tool2_.tool_id as tool_id1_0_2_, tool2_.negative_asset as negative2_0_2_, tool2_.positive_asset as positive3_0_2_, tool2_.user_id as user_id4_0_2_ from tool tool0_ left outer join user user1_ on tool0_.user_id=user1_.id left outer join tool tool2_ on user1_.id=tool2_.tool_id where tool0_.tool_id=?
+[DEBUG] 2022-05-11 03:13:50.643 [main] Loader - Static select for action ACTION_MERGE on entity com.palmerlarson.entity.Tool: select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_ from tool tool0_ where tool0_.tool_id=?
+[DEBUG] 2022-05-11 03:13:50.643 [main] Loader - Static select for action ACTION_REFRESH on entity com.palmerlarson.entity.Tool: select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_ from tool tool0_ where tool0_.tool_id=?
+[DEBUG] 2022-05-11 03:13:50.643 [main] AbstractEntityPersister - Static SQL for entity: com.palmerlarson.entity.User
+[DEBUG] 2022-05-11 03:13:50.643 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2022-05-11 03:13:50.643 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.first_name as first_na2_1_, user_.gross_income as gross_in3_1_, user_.last_name as last_nam4_1_, user_.userName as userName5_1_ from user user_ where user_.id=?
+[DEBUG] 2022-05-11 03:13:50.643 [main] AbstractEntityPersister -  Insert 0: insert into user (first_name, gross_income, last_name, userName, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2022-05-11 03:13:50.643 [main] AbstractEntityPersister -  Update 0: update user set first_name=?, gross_income=?, last_name=?, userName=? where id=?
+[DEBUG] 2022-05-11 03:13:50.644 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2022-05-11 03:13:50.644 [main] AbstractEntityPersister -  Identity insert: insert into user (first_name, gross_income, last_name, userName) values (?, ?, ?, ?)
+[DEBUG] 2022-05-11 03:13:50.644 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e545821]
+[DEBUG] 2022-05-11 03:13:50.644 [main] MetamodelGraphWalker - Visiting attribute path : first_name
+[DEBUG] 2022-05-11 03:13:50.644 [main] MetamodelGraphWalker - Visiting attribute path : gross_income
+[DEBUG] 2022-05-11 03:13:50.644 [main] MetamodelGraphWalker - Visiting attribute path : last_name
+[DEBUG] 2022-05-11 03:13:50.644 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2022-05-11 03:13:50.644 [main] MetamodelGraphWalker - Visiting attribute path : tool
+[DEBUG] 2022-05-11 03:13:50.644 [main] MetamodelGraphWalker - Property path deemed to be circular : tool
+[DEBUG] 2022-05-11 03:13:50.644 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-05-11 03:13:50.644 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-05-11 03:13:50.645 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2022-05-11 03:13:50.645 [main] EntityLoader - Static select for entity com.palmerlarson.entity.User [NONE]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-11 03:13:50.645 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76a7fcbd]
+[DEBUG] 2022-05-11 03:13:50.645 [main] MetamodelGraphWalker - Visiting attribute path : first_name
+[DEBUG] 2022-05-11 03:13:50.645 [main] MetamodelGraphWalker - Visiting attribute path : gross_income
+[DEBUG] 2022-05-11 03:13:50.645 [main] MetamodelGraphWalker - Visiting attribute path : last_name
+[DEBUG] 2022-05-11 03:13:50.645 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2022-05-11 03:13:50.645 [main] MetamodelGraphWalker - Visiting attribute path : tool
+[DEBUG] 2022-05-11 03:13:50.645 [main] MetamodelGraphWalker - Property path deemed to be circular : tool
+[DEBUG] 2022-05-11 03:13:50.645 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2022-05-11 03:13:50.645 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2022-05-11 03:13:50.645 [main] LoadPlanTreePrinter - LoadPlan(entity=com.palmerlarson.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.palmerlarson.entity.User, querySpaceUid=<gen:0>, path=com.palmerlarson.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.palmerlarson.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2022-05-11 03:13:50.645 [main] EntityLoader - Static select for entity com.palmerlarson.entity.User [READ]: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-11 03:13:50.646 [main] Loader - Static select for action ACTION_MERGE on entity com.palmerlarson.entity.User: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-11 03:13:50.646 [main] Loader - Static select for action ACTION_REFRESH on entity com.palmerlarson.entity.User: select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-11 03:13:50.664 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2022-05-11 03:13:50.666 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2022-05-11 03:13:50.667 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2022-05-11 03:13:50.674 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-05-11 03:13:50.674 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2022-05-11 03:13:50.679 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2022-05-11 03:13:50.680 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2022-05-11 03:13:50.683 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@c412556
+[DEBUG] 2022-05-11 03:13:50.685 [main] SessionFactoryRegistry - Registering SessionFactory: 695fcd00-7381-4bb1-953a-ba2d282bda51 (<unnamed>)
+[DEBUG] 2022-05-11 03:13:50.685 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2022-05-11 03:13:50.737 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2022-05-11 03:13:50.749 [main] SQL - select user0_.id as id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.gross_income as gross_in3_1_0_, user0_.last_name as last_nam4_1_0_, user0_.userName as userName5_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2022-05-11 03:13:50.866 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2022-05-11 03:13:50.866 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2022-05-11 03:13:50.889 [main] TwoPhaseLoad - Resolving attributes for [com.palmerlarson.entity.User#6]
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Processing attribute `first_name` : value = Palmer
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Attribute (`first_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Processing attribute `gross_income` : value = 5
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Attribute (`gross_income`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Processing attribute `last_name` : value = Larson
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Attribute (`last_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Processing attribute `userName` : value = rebelic
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.890 [main] TwoPhaseLoad - Processing attribute `tool` : value = 6
+[DEBUG] 2022-05-11 03:13:50.891 [main] TwoPhaseLoad - Attribute (`tool`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.891 [main] SQL - select tool0_.tool_id as tool_id1_0_0_, tool0_.negative_asset as negative2_0_0_, tool0_.positive_asset as positive3_0_0_, tool0_.user_id as user_id4_0_0_, user1_.id as id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.gross_income as gross_in3_1_1_, user1_.last_name as last_nam4_1_1_, user1_.userName as userName5_1_1_, tool2_.tool_id as tool_id1_0_2_, tool2_.negative_asset as negative2_0_2_, tool2_.positive_asset as positive3_0_2_, tool2_.user_id as user_id4_0_2_ from tool tool0_ left outer join user user1_ on tool0_.user_id=user1_.id left outer join tool tool2_ on user1_.id=tool2_.tool_id where tool0_.tool_id=?
+[DEBUG] 2022-05-11 03:13:50.947 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2022-05-11 03:13:50.948 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2022-05-11 03:13:50.950 [main] TwoPhaseLoad - Resolving attributes for [com.palmerlarson.entity.Tool#6]
+[DEBUG] 2022-05-11 03:13:50.950 [main] TwoPhaseLoad - Processing attribute `negative_asset` : value = 3
+[DEBUG] 2022-05-11 03:13:50.951 [main] TwoPhaseLoad - Attribute (`negative_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.951 [main] TwoPhaseLoad - Processing attribute `positive_asset` : value = 10
+[DEBUG] 2022-05-11 03:13:50.951 [main] TwoPhaseLoad - Attribute (`positive_asset`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.951 [main] TwoPhaseLoad - Processing attribute `user_id` : value = 2
+[DEBUG] 2022-05-11 03:13:50.951 [main] TwoPhaseLoad - Attribute (`user_id`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.952 [main] TwoPhaseLoad - Done materializing entity [com.palmerlarson.entity.Tool#6]
+[DEBUG] 2022-05-11 03:13:50.953 [main] TwoPhaseLoad - Resolving attributes for [com.palmerlarson.entity.User#2]
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Processing attribute `first_name` : value = Herbert
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Attribute (`first_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Processing attribute `gross_income` : value = 65000
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Attribute (`gross_income`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Processing attribute `last_name` : value = Schilt
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Attribute (`last_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Processing attribute `userName` : value = herbert
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Processing attribute `tool` : value = 2
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Attribute (`tool`)  - enhanced for lazy-loading? - false
+[DEBUG] 2022-05-11 03:13:50.954 [main] TwoPhaseLoad - Done materializing entity [com.palmerlarson.entity.User#2]
+[DEBUG] 2022-05-11 03:13:50.955 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2022-05-11 03:13:50.955 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.palmerlarson.entity.Tool#6
+[DEBUG] 2022-05-11 03:13:50.955 [main] TwoPhaseLoad - Done materializing entity [com.palmerlarson.entity.User#6]
+[DEBUG] 2022-05-11 03:13:50.955 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2022-05-11 03:13:50.956 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.palmerlarson.entity.User#6
+[DEBUG] 2022-05-11 03:13:50.956 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2022-05-11 03:13:51.059 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2022-05-11 03:13:51.059 [main] TransactionImpl - begin
+[DEBUG] 2022-05-11 03:13:51.157 [main] TransactionImpl - committing
+[DEBUG] 2022-05-11 03:13:51.157 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2022-05-11 03:13:51.157 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2022-05-11 03:13:51.158 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 2 deletions to 2 objects
+[DEBUG] 2022-05-11 03:13:51.158 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2022-05-11 03:13:51.159 [main] EntityPrinter - Listing entities:
+[DEBUG] 2022-05-11 03:13:51.159 [main] EntityPrinter - com.palmerlarson.entity.Tool{user_id=com.palmerlarson.entity.User#2, negative_asset=3, tool_id=6, positive_asset=10}
+[DEBUG] 2022-05-11 03:13:51.159 [main] EntityPrinter - com.palmerlarson.entity.User{gross_income=5, last_name=Larson, id=6, userName=rebelic, first_name=Palmer, tool=com.palmerlarson.entity.Tool#6}
+[DEBUG] 2022-05-11 03:13:51.163 [main] SQL - delete from user where id=?
+[DEBUG] 2022-05-11 03:13:51.270 [main] SqlExceptionHelper - could not execute statement [n/a]
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`wdev`.`tool`, CONSTRAINT `tool_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1098) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1046) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1371) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1031) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:410) ~[c3p0-0.9.5.3.jar:0.9.5.3]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3519) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3778) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:100) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:478) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:361) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1493) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:496) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3371) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2540) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at com.palmerlarson.persistence.UserDao.delete(UserDao.java:94) [classes/:?]
+	at com.palmerlarson.persistence.UserDaoTest.deleteSuccess(UserDaoTest.java:75) [test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) [junit-rt.jar:?]
+[WARN ] 2022-05-11 03:13:51.276 [main] SqlExceptionHelper - SQL Error: 1451, SQLState: 23000
+[ERROR] 2022-05-11 03:13:51.276 [main] SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`wdev`.`tool`, CONSTRAINT `tool_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+[INFO ] 2022-05-11 03:13:51.277 [main] AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+[DEBUG] 2022-05-11 03:13:51.278 [main] JdbcResourceLocalTransactionCoordinatorImpl - JDBC transaction marked for rollback-only (exception provided for stack trace)
+java.lang.Exception: exception just for purpose of providing stack trace
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.markRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:314) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.markRollbackOnly(TransactionImpl.java:206) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.markForRollbackOnly(AbstractSharedSessionContract.java:392) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.handlePersistenceException(ExceptionConverterImpl.java:297) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:155) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1499) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:496) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3371) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2540) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at com.palmerlarson.persistence.UserDao.delete(UserDao.java:94) [classes/:?]
+	at com.palmerlarson.persistence.UserDaoTest.deleteSuccess(UserDaoTest.java:75) [test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) [junit-rt.jar:?]
+[DEBUG] 2022-05-11 03:13:51.279 [main] JdbcResourceLocalTransactionCoordinatorImpl - JDBC transaction marked for rollback-only (exception provided for stack trace)
+java.lang.Exception: exception just for purpose of providing stack trace
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.markRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:314) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:187) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at com.palmerlarson.persistence.UserDao.delete(UserDao.java:94) [classes/:?]
+	at com.palmerlarson.persistence.UserDaoTest.deleteSuccess(UserDaoTest.java:75) [test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) [junit-rt.jar:?]
+[DEBUG] 2022-05-11 03:13:51.325 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2022-05-11 03:13:51.374 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
