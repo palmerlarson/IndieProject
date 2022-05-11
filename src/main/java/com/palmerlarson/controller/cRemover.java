@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Class used as practice - will be used as main graph creation class
+ * Class used to remove chart from list
  */
 @WebServlet(
         urlPatterns = {"/cRemover"}
@@ -31,6 +31,13 @@ public class cRemover extends HttpServlet {
         dispatcher.forward(req, resp);
     }
 
+    /**
+     * Post removes chart via the dao
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()));
         int i = Integer.parseInt(br.readLine());

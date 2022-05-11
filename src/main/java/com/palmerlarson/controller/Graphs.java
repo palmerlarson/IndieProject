@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Class used as practice - will be used as main graph creation class
+ * Main saved graphs class
  */
 @WebServlet(
         urlPatterns = {"/graphs"}
@@ -31,6 +31,13 @@ import java.util.Objects;
 public class Graphs extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * Pulls the saved graphs and returns them to the jsp
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session=req.getSession(false);
         ToolDao tDao = new ToolDao();
@@ -48,12 +55,12 @@ public class Graphs extends HttpServlet {
                 int tId = tLister.getTool_id();
                 int wealth = tLister.getPositive_asset();
                 int debt = tLister.getNegative_asset();
-                strArr.add("<li id='" + tId
+                strArr.add("<li class='text-2xl font-bold my-2 border border-black-900 w-auto' id='" + tId
                         + "'><button id=\"btnStatus\" class=\"btn\" onclick=\"removeTool('" + tId + "')\">"
                         + "<i class=\"fa-solid fa-trash text-lg\"></i></button> Wealth: "
-                        + wealth + "- Debt: " + debt
-                        + "<button id=\"btnStatus\" class=\"btn\" onclick='generateChart(" + wealth + ","
-                        + debt + ")'>Generate</button></li>");
+                        + wealth + " - Debt: " + debt
+                        + "   <button id=\"btnStatus\" class=\"btn inline-block px-6 py-2 border-2 border-gray-800 text-gray-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out\" onclick='generateChart("
+                        + wealth + "," + debt + ")'>Generate</button></li>");
             }
         }
         req.setAttribute("liArr", strArr);
@@ -62,6 +69,13 @@ public class Graphs extends HttpServlet {
         dispatcher.forward(req, resp);
     }
 
+    /**
+     * Generates new graphs for the saves parameters from the db
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()));
         JSONArray arr = new JSONArray(br.readLine());

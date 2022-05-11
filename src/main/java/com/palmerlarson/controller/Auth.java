@@ -159,7 +159,6 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         BigInteger modulus = new BigInteger(1, org.apache.commons.codec.binary.Base64.decodeBase64(jwks.getKeys().get(0).getN()));
         BigInteger exponent = new BigInteger(1, org.apache.commons.codec.binary.Base64.decodeBase64(jwks.getKeys().get(0).getE()));
 
-        // TODO the following is "happy path", what if the exceptions are caught?
         // Create a public key
         PublicKey publicKey = null;
         try {
@@ -186,11 +185,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         String userName = jwt.getClaim("cognito:username").asString();
         String email = jwt.getClaim("email").asString();
         logger.debug("here's the username: " + userName);
-
         logger.debug("here are all the available claims: " + jwt.getClaims());
-
-        // TODO decide what you want to do with the info!
-        // for now, I'm just returning username for display back to the browser
         logger.error(userName);
 
         String[] atts = {userName, email};

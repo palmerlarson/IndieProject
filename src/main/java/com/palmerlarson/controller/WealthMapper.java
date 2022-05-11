@@ -23,6 +23,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.Objects;
 
+/**
+ * Main tool app for user to enter values
+ */
 @WebServlet(
         urlPatterns = {"/wealthMapper"}
 )
@@ -30,17 +33,27 @@ public class WealthMapper extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * forward to wealthmapper
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         InfoPage.pullName(req, resp, logger);
-
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/wealthMapper.jsp");
         dispatcher.forward(req, resp);
 
-
-
     }
 
+    /**
+     * Generates the charts with user entered params
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()));
@@ -81,15 +94,11 @@ public class WealthMapper extends HttpServlet {
 
             ChartUtils.writeChartAsPNG(out, pieChart, 400, 300);
         } catch (Exception e) {
-            System.err.println(e.toString()); /* Throw exceptions to log files */
+            logger.error(e.toString()); /* Throw exceptions to log files */
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/wealthMapper.jsp");
         dispatcher.forward(req, resp);
     }
 
-//
-//    protected void evaluator(wealth, debt) {
-//
-//    }
 }
