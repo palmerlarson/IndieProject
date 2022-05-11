@@ -116,6 +116,11 @@ public class UserDao {
         return users;
     }
 
+    /**
+     * finds user based on username entered
+     * @param name
+     * @return user
+     */
     public User getByUserName(String name) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();

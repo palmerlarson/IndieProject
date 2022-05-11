@@ -1,3 +1,4 @@
+//json array
 let worth = [
 ];
 
@@ -83,15 +84,25 @@ const submit = () => {
     xhr.send(JSON.stringify(worth));
 }
 
+//saves the chart params to rdb
 const save = () => {
+    let saveBtn = document.querySelector(".saveBtn");
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "graphs", true);
     xhr.setRequestHeader("Content-type", "application/json");
     xhr.onreadystatechange = () => {
         if(xhr.readyState === 4) {
             console.log("saved");
-            console.log(xhr.response);
+            saveBtn.parentNode.removeChild(saveBtn);
         }
     }
     xhr.send(JSON.stringify(worth));
 }
+
+//locks up button
+const btn = document.querySelector(".infoBtn");
+btn.addEventListener("click", function() {
+    let div = document.querySelector(".infoDiv");
+    btn.disabled = true;
+    div.innerHTML += `<h3 class="text-red-600">Your information has been updated</h3>`;
+});

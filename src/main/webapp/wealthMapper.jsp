@@ -46,8 +46,7 @@
                     <c:when test="${empty mIncome}">
                     </c:when>
                     <c:otherwise>
-                        <li id='mIncome'><button id="btnStatus" class="btn"
-                                                 onclick="deleteItem('mIncome')"><i class="fa-solid fa-trash text-lg"></i></button><span> Monthly Income</span> - $<span class="monthly text-lime-500">${mIncome}</span></li>
+                        <li id='mIncome'><button id="btnStatus" class="btn" onclick="deleteItem('mIncome')"><i class="fa-solid fa-trash text-lg"></i></button><span> Monthly Income</span> - $<span class="monthly text-lime-500">${mIncome}</span></li>
                     </c:otherwise>
                 </c:choose>
             </ul>
@@ -57,14 +56,14 @@
             <h3 class="debtT inline-block">Debt: $0</h3>
         </div>
         <div class="configBtn hidden static inset-x-0 bottom-0">
-            <button class="rounded border border-gray-400 bg-white py-2 px-4 font-semibold text-gray-800 shadow hover:bg-gray-100 mt-2" type="button" onclick="save()">Save Config</button>
+            <button class="saveBtn rounded border border-gray-400 bg-white py-2 px-4 font-semibold text-gray-800 shadow hover:bg-gray-100 mt-2" type="button" onclick="save()">Save Config</button>
         </div>
     </div>
 
 </div>
 
 <div class="flex mt-8 mx-4 content-center">
-    <div class="imgOutput invisible relative w-2/4 ml-10 rounded-xl bg-orange-50 py-2 text-center content-center drop-shadow-2xl z-10">
+    <div class="imgOutput invisible relative w-2/4 ml-10 mr-2 rounded-xl bg-orange-50 py-2 text-center content-center drop-shadow-2xl z-10">
         <img class="invisible object-fill mx-auto" id="captchaImg"  alt="img" src="#"/>
     </div>
 

@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 
 /**
- * Class used as practice - will be used as main graph creation class
+ * class used to generated saved charts from the db params
  */
 @WebServlet(
         urlPatterns = {"/cGenerator"}
@@ -29,6 +29,13 @@ import java.io.OutputStream;
 public class cGenerator extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     *  forward /cGenerator
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         InfoPage.pullName(req, resp, logger);
 
@@ -36,6 +43,13 @@ public class cGenerator extends HttpServlet {
         dispatcher.forward(req, resp);
     }
 
+    /**
+     *  Generates a new chart based on the pulled saved parameters from rds
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()));
         JSONArray arr = new JSONArray(br.readLine());
@@ -62,7 +76,4 @@ public class cGenerator extends HttpServlet {
         dispatcher.forward(req, resp);
 
     }
-
-
-
 }

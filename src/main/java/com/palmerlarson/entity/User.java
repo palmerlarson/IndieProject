@@ -8,6 +8,7 @@ import java.util.Objects;
 
 /**
  * The type user
+ *
  * @author palmerlarson
  */
 @Entity(name = "User")
@@ -48,7 +49,7 @@ public class User {
      *
      * @param first_name   the first name
      * @param last_name    the last name
-     * @param userName   the userName
+     * @param userName     the userName
      * @param gross_income the gross income
      */
     public User(String first_name, String last_name, String userName, int gross_income) {

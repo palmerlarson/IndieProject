@@ -15,13 +15,24 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * Main profile page for returning and updating profile information
+ */
 @WebServlet(
         urlPatterns = {"/infoPage"}
 )
 public class InfoPage extends HttpServlet implements PropertiesLoader {
 
+
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * forward infoPage
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         pullName(req, resp, logger);
@@ -30,6 +41,7 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage.jsp");
         dispatcher.forward(req, resp);
     }
+
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String firstName = req.getParameter("fName");
@@ -47,7 +59,7 @@ public class InfoPage extends HttpServlet implements PropertiesLoader {
         }
 
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/infoPage");
         dispatcher.forward(req, resp);
     }
 

@@ -1,7 +1,5 @@
 package com.palmerlarson.controller;
 
-import com.palmerlarson.entity.User;
-import com.palmerlarson.persistence.UserDao;
 import com.palmerlarson.util.PropertiesLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 import java.util.Properties;
 
 @WebServlet(
@@ -39,8 +36,6 @@ public class  LogIn extends HttpServlet implements PropertiesLoader {
      * Read in the cognito props file and get the client id and required urls
      * for authenticating a user.
      */
-    // TODO This code appears in a couple classes, consider using a startup servlet similar to adv java project
-    // 4 to do this work a single time and put the properties in the application scope
     private void loadProperties() {
         try {
             properties = loadProperties("/cognito.properties");
@@ -63,7 +58,6 @@ public class  LogIn extends HttpServlet implements PropertiesLoader {
      */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // TODO if properties weren't loaded properly, route to an error page
         String url = LOGIN_URL + "?response_type=code&client_id=" + CLIENT_ID + "&redirect_uri=" + REDIRECT_URL;
         resp.sendRedirect(url);
 
